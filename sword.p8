@@ -13,12 +13,6 @@ __lua__
 	
 --The JSON parser program was designed by tylerneylon, adapted by feneric, which tylerneylon has released into the public domain. Feneric's adaptation of it is released under the GPL v3 license: https://www.gnu.org/licenses/gpl-3.0.en.html.
 
-
---TODO:--
---defense is armor upgrades that change helmet color
---dual returns
---directly return tables
---get rid of all the for loops
 function _init()
 	t=0
 
