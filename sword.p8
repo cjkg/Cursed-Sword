@@ -5,15 +5,24 @@ __lua__
 
 credits:
 
-deepest thanks to krystian majewski of lazydevs academy for the use of his game porklike as an engine for this game. much of the code of this game was designed by him, and i thank him especially for his ingenious level procedural generator, and the binary signature technique. porklike was released under the cc by-nc-sa 4.0 license, which is linked below, as it is also this game's license.
+deepest thanks to krystian majewski of lazydevs academy for the use of his game 
+porklike as an engine for this game. much of the code of this game was designed 
+by him, and i thank him especially for his ingenious level procedural generator, 
+and the binary signature technique. porklike was released under the cc by-nc-sa 
+4.0 license, which is linked below, as it is also this game's license.
 
 michael s, who conceived many of the power gems. thanks, michael!
 
-the json parser program was designed by tylerneylon, adapted by feneric, which tylerneylon has released into the public domain. feneric's adaptation of it is released under the gpl v3 license: https://www.gnu.org/licenses/gpl-3.0.en.html.
+the json parser program was designed by tylerneylon, adapted by feneric, which 
+tylerneylon has released into the public domain. feneric's adaptation of it is 
+eleased under the gpl v3 license: https://www.gnu.org/licenses/gpl-3.0.en.html.
 
-enemy and potion artwork licensed from oryx design labs, www.oryxdesignlab.com. (includes tiles 35-37,192-254)
+enemy and potion artwork licensed from oryx design labs, www.oryxdesignlab.com. 
+(includes tiles 35-37,192-254)
 
-this game is released under the cc by-nc-sa 4.0 license, except for the above-mentioned artwork licensed from oryx design labs, which you can read here: https://creativecommons.org/licenses/by-nc-sa/4.0/
+this game is released under the cc by-nc-sa 4.0 license, except for the above-
+mentioned artwork licensed from oryx design labs, which you can read here: 
+https://creativecommons.org/licenses/by-nc-sa/4.0/
 --]]
 
 
