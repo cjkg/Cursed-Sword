@@ -18,7 +18,7 @@ tylerneylon has released into the public domain. feneric's adaptation of it is
 released under the gpl v3 license: https://www.gnu.org/licenses/gpl-3.0.en.html.
 
 enemy and potion artwork licensed from oryx design labs, www.oryxdesignlab.com. 
-(includes tiles 35-37,192-254)
+(includes tiles 68-70,192-254)
 
 this game is released under the cc by-nc-sa 4.0 license, except for the above-
 mentioned artwork licensed from oryx design labs. You can read the game's
@@ -27,15 +27,12 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/
 --]]
 
 function _init()
-	--5964 98
 	
 	t=0
-
 	cartdata(cursed_sword)
 
-	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer"],"mob_atk":[1,1,1,2,2,3,3,4,4,5],"mob_hp":[10,1,1,2,3,5,10,12,12,15],"mob_los":[5,4,10,5,5,5,4,4,4,5],"mob_ani":[240,212,228,208,192,196,244,224,200,216],"mob_col":[12,3,6,8,14,11,7,9,9,13],"mob_def":[0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1],"mob_quench":[0,10,10,10,10,10,10,10,10,10],"mob_floor_min":[0,0,3,4,5,6,7,8,9,9,9],"mob_floor_max":[0,3,6,7,8,9,9,9,9,9,9],"gems":{"a":{"name":"amethyst","color":12,"mod":"atk","base":1},"r":{"name":"ruby","color":14,"mod":"♥","base":5},"d":{"name":"diamond","color":7,"mod":"⧗","base":1},"e":{"name":"emerald","color":11,"mod":"luck","base":1},"c":{"name":"chipped","mult":1},"rh":{"name":"rough","mult":2},"ct":{"name":"cut","mult":3},"f":{"name":"flawless","mult":5},"rc":{"name":"relic","mult":10}},"gem_types":["e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a ","e","r","a","e","r","a","e","r","a","e","r","a","e","r","a","d","d","d","d"],"gem_qual":["c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","c","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","rh","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","ct","f","f","rc"],"powergemstypes":["doomsword","shovelsword","coinsword","vampiretooth","witcheye","cleromancer"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 20%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall square"," for 25 ⧗! be careful!"],"price":750},"coinsword":{"name":"miser edge","color":8,"desc":[" hoarding wealth"," increases your atk!"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" 2x atk when ⧗"," is below 25!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see what happens!"],"price":500}},"vases":[1,1,5,6,7],"npcs":{},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
-	
-	mob_name,mob_atk,mob_hp,mob_los,mob_ani,mob_col,mob_def,mob_int,mob_quench,mob_minf,mob_maxf=_gt.mob_name,_gt.mob_atk,_gt.mob_hp,_gt.mob_los,_gt.mob_ani,_gt.mob_col,_gt.mob_def,_gt.mob_int,_gt.mob_quench,_gt.mob_floor_min,_gt.mob_floor_max
+	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer"],"mob_atk":[1,1,1,2,2,3,3,3,3,4],"mob_hp":[10,1,1,2,3,5,6,7,7,8],"mob_los":[5,4,10,5,5,5,4,4,4,5],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203]],"mob_col":[12,11,6,8,14,11,7,9,9,13],"mob_def":[0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1],"mob_quench":[0,10,10,10,10,10,10,5,5,5],"mob_floor_min":[0,0,3,4,5,6,7,8,9,9,10],"mob_floor_max":[0,3,7,8,9,10,10,11,11,12,12],"mob_spec":["","","","","","","","","","",""],"maxmons":[6,10,14,0,18,20,22,0,22,21,20],"minmons":[3,5,7,0,9,10,11,0,12,13,13,0],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":4},"relic":{"mult":5}},"powergemstypes":["doomsword","shovelsword","skippingstone","vampiretooth","witcheye","cleromancer"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 20%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall square"," for 25 ⧗! be careful!"],"price":750},"skippingstone":{"name":"skipping stone","color":8,"desc":[" bump walls to skip"," a turn"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" 2x atk when ⧗"," is below 25!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see what happens!"],"price":500}},"vases":[1,1,1,1,1,1,5,7,7],"npcs":{},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
+	mob_name,mob_atk,mob_hp,mob_los,mob_ani,mob_col,mob_def,mob_int,mob_quench,mob_minf,mob_maxf,mob_spec,minmons,maxmons=_gt.mob_name,_gt.mob_atk,_gt.mob_hp,_gt.mob_los,_gt.mob_ani,_gt.mob_col,_gt.mob_def,_gt.mob_int,_gt.mob_quench,_gt.mob_floor_min,_gt.mob_floor_max,_gt.mob_spec,_gt.minmons,_gt.maxmons
 	gem_types,gem_qual,gem_props,powergemsprops,powergemstypes,vases=_gt.gem_types,_gt.gem_qual,_gt.gems,_gt.powergemsprops,_gt.powergemstypes,_gt.vases
 
 	tools=_gt.tools
@@ -57,8 +54,10 @@ end
 function _draw()
 	_drw()
  	drawwind()
+ 
 	checkfade()
 	--★
+	
 	cursor(4,4)
 	color(8)
 	for txt in all(debug) do
@@ -67,28 +66,23 @@ function _draw()
 end
 
 function startgame()
-	tani=0
-	fadeperc=1
-	buttonbuff=-1
-	skipai=false
- win=false
- winfloor=9
- --★ cut winfloor for tokens
+	tani,fadeperc,buttonbuff=0,0,-1
+
+	skipai,win=false,false
 
 	mob,dmob={},{}
 	p_mob=addmob(1,-100,-100)
 	--★
 	p_t=0
 	--keep dig,xray at the end. will try to cut later ★
-	level,luck,thirst,thirstrate,gold,turn=1,0,250,1,0,0
-	clerotype={"♥","⧗","◆"}
-	inv,eqp={},{}
-	wind,float={},{}
-	hpwind=addwind(5,5,108,13,{})
+	kills,luck,thirst,thirstrate,gold,turn=0,0,50,1,0,0
+	clerotype={"♥","⧗"}--,"◆"}
+	inv,eqp,wind,float={},{},{},{},{}
+	
+	hpwind=addwind(5,5,80,13,{})
 
 	_upd,_drw=update_game,draw_game
 	genfloor(0)
-	
 end
 -->8
 --updates
@@ -104,6 +98,9 @@ function update_game()
 		buttonbuff=-1
 	end
 end
+
+
+
 
 function update_inv()
 	local curs=curwind.cur
@@ -127,6 +124,7 @@ function update_inv()
 
 	if btnp(4) then
   if curwind==invwind then
+    
    _upd=update_game
    invwind.dur,statwind.dur,infowind.dur=0,0,0
   else --★elseif curwind==usewind then
@@ -161,15 +159,16 @@ function update_pturn()
 	if p_t==1 then
 		_upd=update_game
 		trig_step()
+		debug[1]=skipper
+		if skipper then skipai=false end
 		if checkend() and not skipai then
 			do_ai()
 			turn+=1
-		end
-		if checkend() and not skipai then
 			if turn%thirstrate==0 then
-				if thirst>0 then
+			--★ put floor list in json
+				if thirst>0 and not isin(floor,{0,12}) then
 					thirst-=1
-				else
+				elseif thirst==0 and not isin(floor,{0,4,8,12}) then
 					showmsg("your sword feasts on you!",120)					
 					p_mob.hp-=1
 				end
@@ -215,8 +214,8 @@ function dobutton(button)
 		moveplayer(dirx[button+1],diry[button+1])
 	elseif button==5 then
 		showinv()
-	elseif button==4 then
-		genfloor(floor+1)
+	elseif button==4 and skipper then
+		
 	end
 end
 
@@ -229,8 +228,9 @@ end
 --draws
 
 function draw_game()
-	cls(0)
+	cls()
 	if fadeperc==1 then return end --fixes flicker
+		
 	animap()
 
 	map()
@@ -244,7 +244,11 @@ function draw_game()
 	for i=#mob,1,-1 do
 		drawmob(mob[i])
 	end
-	
+	--[[
+		for x,y in ipairs(fog) do
+			rectfill2(x*8,y*8,8,8,0)
+		
+	end]]
 	
 	for x=0,15 do
 		for y=0,15 do
@@ -271,12 +275,24 @@ function drawmob(m)
 end
 
 function draw_gameover()
-	cls(0)
-	print("you died",centx(8),centy(1),8)
+	cls()
+	if not win then
+		palt(12,true)
+	end
+	spr(gover_spr,gover_x,24,gover_w,3)
+	
+	color(7)
+	cursor(44,50)
+	print("floor: "..floor)
+	print("steps: "..turn)
+	print("kills: "..kills)
+	
+	
+	print("press ❎",44,90,5+abs(sin(time()/3)*2))
 end
 
 function draw_win()
-	cls(0)
+	cls()
 	print("you win",centx(8),centy(1),8)
 end
 
@@ -288,15 +304,19 @@ function animap()
 		for y=0,15 do
 			local tle=mget(x,y)
 				--★
-			if tle==73 or tle==75 then
+			if isin(tle,{73,75,174,232,234}) then
 				tle+=1
-			elseif tle==74 or tle==76 then
+			elseif isin(tle,{74,76,175,233,235}) then
 				tle-=1
 			end
 		mset(x,y,tle)
 		end
 	end
 end
+
+
+
+
 -->8
 --tools
 
@@ -432,7 +452,7 @@ function json_parse(wrkstr, pos, end_delim)
 			end
 	end
 end
---6056 vs 5363 
+
 function blankmap(_dflt)
  local ret={}
  if (_dflt==nil) _dflt=0
@@ -568,8 +588,10 @@ function copymap(x,y)
   end
  end
 end
+
+
 -->8
---gameplay
+ --gameplay
 
 function moveplayer(dx,dy)
 	local destx,desty=p_mob.x+dx,p_mob.y+dy
@@ -577,15 +599,11 @@ function moveplayer(dx,dy)
 
 	if iswalkable(destx,desty,"checkmobs") then
 		sfx(63)
-		skipai=false
 		mobwalk(p_mob,dx,dy)
 		p_t=0
 		_upd=update_pturn
 	else
-		skipai=false
 		mobbump(p_mob,dx,dy)
-
-		--★ combine variables
 		p_t=0
 		_upd=update_pturn
 
@@ -598,7 +616,7 @@ function moveplayer(dx,dy)
 				trig_bump(tle,destx,desty)
 			else
 				skipai=true
-				if dig and tle==2 then
+				if dig and fget(tle,7) then
 					--★ save tokens?
 					dodig(destx,desty)
 				end
@@ -609,41 +627,39 @@ function moveplayer(dx,dy)
 end
 
 function trig_bump(tle,destx,desty)
-		if tle==12 then
-			sfx(62)
-			mset(destx,desty,1)
-		elseif tle==5then
-			sfx(61)
-			local amt=ceil((level+1)/2)+flr(rnd(luck+3))
-			
-			treasure("♥",amt,destx,desty,8)
-			mset(destx,desty,79)
-		
-		elseif tle==6 then
-			sfx(61)
-			local amt=5*flr(ceil((level+1)/2)+rnd(luck+3))
-			treasure("◆",amt,destx,desty,9)
-			mset(destx,desty,79)
-		elseif tle==2 then
-			skipai=true
-		elseif tle==4 then
-			if floor ==winfloor then
-				win=true
-			end
-		elseif tle==7 then
-			sfx(61)
-			mset(destx,desty,79)
-		elseif tle==10 then
-			treasure("●","",destx,desty,11)		
-		elseif tle==204 then
-			showtalk({""," i'm the last of my order.", " the rest were slain long", " ago, by that very sword", " you wield.",""})
-		end
-		return
+	if tle==12 then
+		sfx(62)
+		mset(destx,desty,1)
+	elseif tle==5 then
+		sfx(61)
+		local amt=ceil((floor+1)/3)+flr(rnd(luck))
+		treasure("♥",amt,destx,desty,8)
+		mset(destx,desty,79)
+	--[[elseif tle==6 then
+		sfx(61)
+		local amt=5*flr(ceil((floor+1)/2)+rnd(luck+3))
+		treasure("◆",amt,destx,desty,9)
+		mset(destx,desty,79)]]
+	elseif isin(tle,{174,175}) then
+		win=true
+	elseif tle==7 then
+		sfx(61)
+		mset(destx,desty,79)
+	elseif tle==10 then
+		treasure("●","",destx,desty,11)		
+	elseif tle==204 then
+		showtalk({""," i'm the last of my order.", " the rest were slain long", " ago, by that very sword", " you wield.",""}) 
+	--[[elseif isin(tle,{205,206,221,222})	then
+		addfloat("buying?",50,64,8)
+		showstore()]]
+	end
+	return
 end
 
 function trig_step()
  if mget(p_mob.x,p_mob.y)==14 then
   fadeout()
+  sfx(46)
   genfloor(floor+1)
   floormsg()
   return true --trigger something just in case
@@ -687,20 +703,21 @@ function hitmob(atkm,defm)
 			dmg=0
 			addfloat("lucky!",defmx*8,defmy*8,11)
 		end
+	else
+		if clero and flr(rnd(101))+luck>50 then
+			treasure("bonus",1,atkm.x,atkm.y-1,11)
+		end
 	end
-	if clero and flr(rnd(101))+luck>50 then
-		treasure("bonus",1,atkm.x,atkm.y-1,11)
-	end
+	
  defm.hp-=dmg
  defm.flash=10
 	if dmg>0 and defm.hp>0 then
 		addfloat("-"..dmg,defmx*8,defmy*8,col)
 	end
 	if defm.hp<=0 then
-  thirst=min(999,thirst+defm.quench)
-  if defm!=p_mob then
-  	--★ just do a treasure call
+ 	if defm!=p_mob then
   	treasure("⧗",defm.quench,defmx,defmy,12)
+	 	kills+=1
 	 end
   add(dmob,defm)
   del(mob,defm)
@@ -712,8 +729,11 @@ function checkend()
 	if win then
 		--★ combine these two things
 		wind={}
+  gover_spr=24
+  gover_x=31
+  gover_w=32
 		_upd=update_gameover
-		_drw=draw_win
+		_drw=draw_gameover
 		fadeout(0.02)
 		--★
 		--might not need this: maybe for narrative levels?
@@ -721,9 +741,13 @@ function checkend()
 		return false
 	elseif p_mob.hp<=0 then
 		wind={}
+  gover_spr=16
+  gover_x=28
+  gover_w=32
 		_upd=update_gameover
 		_drw=draw_gameover
 		fadeout(0.02)
+		sfx(44)
 		--★
 		--reload(0x2000,0x2000,0x1000)
 		return false
@@ -732,7 +756,7 @@ function checkend()
 end
 
 function updatestats()
-	dig,xray,clero=false,false,false
+	dig,xray,clero,skipper=false,false,false,false
 	local atk,def,hpmax,timer,lck=1,1,p_mob.basehpmax,1,0
 	--multiplier loop
 	for i=1,3 do
@@ -740,15 +764,16 @@ function updatestats()
 			local m=eqp[i]
 			local nm=m.name
 			if nm then
-			if nm=="doomshock" and p_mob.hp/p_mob.hpmax<=.2 then
+				if nm=="doomshock" and p_mob.hp/p_mob.hpmax<=.2 then
 					atk*=2
 				elseif nm=="sapper pick" then
 					dig=true
 				elseif nm=="witch eye" then 
 					xray=true
 				elseif nm=="cleromancer" then
-					
 					clero=true
+				elseif nm=="skipping stone" then
+					skipper=true
 				end
 			end
 		end
@@ -766,8 +791,8 @@ function updatestats()
 				hpmax+=m.base*m.mult
 			elseif m.mod=="luck" then
 				lck+=m.base*m.mult
-			elseif m.name=="miser edge" then
-				atk+=flr(gold/199)
+			--[[elseif m.name=="miser edge" then
+				atk+=flr(gold/199)]]
 			end
 		end
 	end
@@ -788,9 +813,9 @@ function treasure(txt,amt,destx,desty,col)
 	if txt=="♥" then
 		local hpmod=p_mob.hp+amt
 		p_mob.hp=min(hpmod,p_mob.hpmax)
-	elseif txt=="◆" then
+	--[[elseif txt=="◆" then
 		local goldmod=gold+amt
-		gold=min(goldmod,999)
+		gold=min(goldmod,999)]]
 	elseif txt=="●" then
 		if freeslot(inv,6)>0 then
 			takeitem(makegem())
@@ -903,7 +928,7 @@ end
 
 function dohpwind()
 	--★ could save 10 tokens by getting rid of the fancy bit
- hpwind.txt[1]=" ♥"..sub('0'..p_mob.hp,-2).."/"..p_mob.hpmax.."  ⧗"..sub("000"..thirst,-3).."  ◆"..sub("000"..gold,-3)
+ hpwind.txt[1]=" ♥"..sub('0'..p_mob.hp,-2).."/"..p_mob.hpmax.."  ⧗"..sub("000"..thirst,-3)--.."  ◆"..sub("000"..gold,-3)
 
  local hpy=0
  if p_mob.y<8 then
@@ -972,7 +997,27 @@ function showuse()
 	usewind.cur=1
 	curwind=usewind
 end
+--[[
+function showstore()
+	local txt={"buy gem: 300◆"}
+	_upd=update_store
+	storewind=addwind(28,80,80,13,txt)
+	storewind.cur=1
+	curwind=storewind	
+end
 
+function trigbuy(i)
+	--local i=storewind.txt[storewind.cur],storewind.cur	
+	if freeslot(inv,6)>0 then
+		inv[freeslot(inv,6)]=makepowergem()
+		sfx(52)
+	else
+		sfx(51)
+		--★full!
+		--★not enough gold!
+	end
+end
+]]
 function triguse()
 	local verb,i,after=usewind.txt[usewind.cur],invwind.cur,"back"
 	local itm=i<4 and eqp[i] or inv[i-4]
@@ -1027,12 +1072,13 @@ function addmob(typ,mx,my)
 		oy=0,
 		flp=false,
 		flash=0,
-		ani={},
+		ani=mob_ani[typ],
 		atk=mob_atk[typ],
 		def=0,
 		hp=mob_hp[typ],
 		basehpmax=mob_hp[typ],
 		hpmax=mob_hp[typ],
+		spec=mob_spec[typ],
 		maxf=mob_maxf[typ],
 		minf=mob_minf[typ],
 		quench=mob_quench[typ],
@@ -1042,10 +1088,6 @@ function addmob(typ,mx,my)
 		x=mx,
 		y=my,
 		task=ai_wait}
-
-	 for i=0,3 do
-	  add(q.ani,mob_ani[typ]+i)
- 	end
 
 	 add(mob,q)
 		return q
@@ -1120,10 +1162,15 @@ function ai_attac(m)
   --attack player
   local dx,dy=px-mx,py-my
   mobbump(m,dx,dy)
-  hitmob(m,p_mob)
-  _upd=update_aiturn
-	sfx(58)
-	return true
+  -- if m.spec=="placeholder" and m.charge>0then
+  	--function(p_mob)
+ -- 	m.charge-=1
+ -- else
+  	
+ 	hitmob(m,p_mob)
+ --	end
+  sfx(58)
+		return true
  else
   --move to player
   if cansee(m,p_mob) then
@@ -1153,13 +1200,12 @@ function ai_attac(m)
 	end
    end
    if #cand>0 then
-	local c=getrnd(cand)
-	mobwalk(m,dirx[c],diry[c])
-	return true
+				local c=getrnd(cand)
+				mobwalk(m,dirx[c],diry[c])
+				return true
    end
-   --re-acquire target? hard mode?
    if cansee(m,p_mob) and m.int > 0 then
-	m.tx,m.ty=px, py
+				m.tx,m.ty=px, py
    end
    return true
   end
@@ -1182,9 +1228,6 @@ function spawnmobs()
  end
  
  if #mobpool==0 then return end
- 
- local minmons={3,5,7,9,10,11,12,13}
- local maxmons={6,10,14,18,20,22,24,26}
  
  local placed,rpot=0,{}
  
@@ -1227,16 +1270,45 @@ end
 --items
 
 function makegem()
+	if rnd()<.8 then
+		return makeattrgem()
+	else
+		return makepowergem()
+	end
+end
+
+function makeattrgem()
+	local gqual,gtype,rnd1="relic","diamond",rnd()
+	if rnd1<.5 then
+		gqual="chipped"
+	elseif rnd1<.85 then
+		gqual="rough"
+	elseif rnd1<.95 then
+		gqual="cut"
+	elseif rnd1<.99 then
+		gqual="flawless"
+	end
 	
-	local _gtp=gem_props[gem_types[mid(1,flr(rnd(100))+1+luck,100)]]
-	local _gqp=gem_props[gem_qual[mid(1,flr(rnd(100))+1+luck,100)]]	--★
+	local rnd2=rnd()
+	 
+	if rnd2<.35 then
+		gtype="ruby"
+	elseif rnd2<.60 then
+		gtype="amethyst"
+	elseif rnd2<.85 then
+		gtype="emerald"
+	end
+
+	_gqp=gem_props[gqual]
+	_gtp=gem_props[gtype]
+
 	return {
-		name=_gqp.name.." ".._gtp.name,
+		name=gqual.." "..gtype,
 		col=_gtp.color,
 		mod=_gtp.mod,
 		base=_gtp.base,
 		mult=_gqp.mult,
-		effect=_gtp.effect
+		effect=_gtp.effect 
 	}
 end
 
@@ -1245,9 +1317,17 @@ function makepowergem()
 	return {
 		name=pg.name,
 		col=pg.color,
-		desc=pg.desc	}
+		desc=pg.desc	
+		}
 end
 
+function powergem(pg)
+	return {
+		name=pg.name,
+		col=pg.col,
+		desc=pg.desc	
+		}
+end
 
 function takeitem(itm)
 	local i=freeslot(inv,6)
@@ -1269,13 +1349,14 @@ function genfloor(f)
 	floor=f
 	mob={}
 	add(mob,p_mob)
+	
 	fog=blankmap(0)
 	if floor==0 then
 		copymap(16,0)
-	elseif floor==winfloor then
-		copymap(3,0)
+	elseif floor==12 then
+		copymap(32,0)
 	else
-		fog=blankmap(0)
+		fog=blankmap(1)
 		mapgen()
 		unfog()
 	end
@@ -1283,7 +1364,6 @@ end
 
 function mapgen()
  --★
- copymap(48,0)
  --todo
  --check for isolated rooms
  --re-add comments
@@ -1293,29 +1373,39 @@ function mapgen()
  --ranged monster attacks
  --laser sword? pop up window, kind of a throw
  --extendo sword, no pop up window, just double range
+	--skipping stone
  --unique, artifact, rare, uncommon, common in their own little arrays and then weigh it outside that.
 	--add bricks when door is horizontal and opened
  --add "in" tool
- --fix sapper pick. mset current position to 1, and get all the  tiles in there. flag?
  --get rid of icky blocks
- rooms={}
- roommap=blankmap(0)
- doors={}
- genrooms()
- mazeworm()
- placeflags()
- carvedoors()
+	--create rubble on all surrounding floor when wall is destroyed
+ --ghosts can move through walls, see through walls once targeted
+ repeat
+  copymap(48,0)
+  rooms={}
+  roomap=blankmap(0)
+  doors={}
+  genrooms()
+  mazeworm() 
+  placeflags()
+  carvedoors()
+  if #flaglib>1 then
+   debug[1]="reconnected area"
+  end
+ until #flaglib==1
+ 
  carvescuts()
  startend()
-	fillends()
+ fillends()
  prettywalls()
- 
+
  installdoors()
  
  spawnchests()
-	spawnmobs()
+ spawnmobs()
  decorooms()
 end
+
 
 --★
 
@@ -1325,15 +1415,30 @@ end
 ----------------
 
 
+--★
+function snapshot()
+ return
+ --[[cls()
+ map()
+ for i=0,1 do
+  flip()
+ end]]
+end
+
+----------------
+-- rooms
+----------------
+
 function genrooms()
- local fmax,rmax=5,4
- local mw,mh=6,6
+ -- tweak dis
+ local fmax,rmax=5,4 --5,4?
+ local mw,mh=6,6     --5,5?
+ 
  repeat
   --todo: 1st room bigger?
   local r=rndroom(mw,mh)
   if placeroom(r) then
    rmax-=1
-
   else
    fmax-=1
    --★
@@ -1345,6 +1450,8 @@ function genrooms()
   end
  until fmax<=0 or rmax<=0
 end
+
+
 
 function rndroom(mw,mh)
  --clamp max area
@@ -1361,25 +1468,25 @@ end
 
 function placeroom(r)
  local cand,c={}
-
+ 
  for _x=0,16-r.w do
   for _y=0,16-r.h do
-   if doesroomfit(r,_x,_y) then  
+   if doesroomfit(r,_x,_y) then
     add(cand,{x=_x,y=_y})
    end
   end
  end
-
+ 
  if #cand==0 then return false end
-
+ 
  c=getrnd(cand)
  r.x=c.x
  r.y=c.y
- add(rooms,r)
+ add(rooms,r) 
  for _x=0,r.w-1 do
   for _y=0,r.h-1 do
    mset(_x+r.x,_y+r.y,1)
-   roommap[_x+r.x][_y+r.y]=#rooms
+   roomap[_x+r.x][_y+r.y]=#rooms
   end
  end
  return true
@@ -1393,7 +1500,7 @@ function doesroomfit(r,x,y)
    end
   end
  end
-
+ 
  return true
 end
 
@@ -1421,9 +1528,10 @@ end
 
 function digworm(x,y)
  local dr,stp=1+flr(rnd(4)),0
-
+ 
  repeat
   mset(x,y,1)
+  snapshot()
   if not cancarve(x+dirx[dr],y+diry[dr],false) or (rnd()<0.5 and stp>2) then
    stp=0
    local cand={}
@@ -1441,18 +1549,18 @@ function digworm(x,y)
   x+=dirx[dr]
   y+=diry[dr]
   stp+=1
- until dr==8
+ until dr==8 
 end
 
 function cancarve(x,y,walk)
-	if not inbounds(x,y) then return false end
-	local walk=walk== nil and iswalkable(x,y) or walk
+ if not inbounds(x,y) then return false end
+ local walk= walk==nil and iswalkable(x,y) or walk
  
  if iswalkable(x,y)==walk then
   local sig=getsig(x,y)
   for i=1,#crv_sig do
-   if bcomp(sig,crv_sig[i],crv_msk[i]) then
-    return true
+   if bcomp(sig,crv_sig[i],crv_msk[i]) then 
+    return true 
    end
   end
  end
@@ -1485,11 +1593,12 @@ end
 
 function placeflags()
  local curf=1
- flags=blankmap(0)
+ flags,flaglib=blankmap(0),{}
  for _x=0,15 do
   for _y=0,15 do
    if iswalkable(_x,_y) and flags[_x][_y]==0 then
     growflag(_x,_y,curf)
+    add(flaglib,curf)
     curf+=1
    end
   end
@@ -1531,18 +1640,20 @@ function carvedoors()
      _f1=flags[x1][y1]
      _f2=flags[x2][y2]
      if found and _f1!=_f2 then
-      add(drs,{x=_x,y=_y,f=_f1})
+      add(drs,{x=_x,y=_y,f1=_f1,f2=_f2})
      end
     end
    end
   end
-
+  
   if #drs>0 then
    local d=getrnd(drs)
    --★
    add(doors,d)
    mset(d.x,d.y,1)
-   growflag(d.x,d.y,d.f)
+   snapshot()
+   growflag(d.x,d.y,d.f1)
+   del(flaglib,d.f2)
   end
  until #drs==0
 end
@@ -1570,11 +1681,12 @@ function carvescuts()
     end
    end
   end
-
+  
   if #drs>0 then
    local d=getrnd(drs)
    add(doors,d)
    mset(d.x,d.y,1)
+   snapshot()
    cut+=1
   end
  until #drs==0 or cut>=3
@@ -1583,17 +1695,18 @@ end
 function fillends()
  local filled,tle
  repeat
- 	filled=false
+  filled=false
   for _x=0,15 do
    for _y=0,15 do
-   	tle=mget(_x,_y)
+    tle=mget(_x,_y)
+    --★
     if cancarve(_x,_y,true) and tle!=14 and tle!=15 then
      filled=true
      mset(_x,_y,2)
+     snapshot()
     end
    end
   end
-
  until not filled
 end
 
@@ -1607,8 +1720,8 @@ end
 
 function nexttoroom(x,y)
  for i=1,4 do
-  if inbounds(x+dirx[i],y+diry[i]) and
-     roommap[x+dirx[i]][y+diry[i]]!=0 then
+  if inbounds(x+dirx[i],y+diry[i]) and 
+     roomap[x+dirx[i]][y+diry[i]]!=0 then
    return true
   end
  end
@@ -1618,8 +1731,8 @@ end
 function installdoors()
  for d in all(doors) do
   local dx,dy=d.x,d.y
-  if mget(dx,dy)==1 
-   or mget(dx,dy)==3 
+  if (mget(dx,dy)==1 
+   or mget(dx,dy)==3)
    and isdoor(dx,dy) 
    and not next2tile(dx,dy,12) then
    
@@ -1627,6 +1740,7 @@ function installdoors()
   end
  end
 end
+
 
 ----------------
 -- decoration
@@ -1707,13 +1821,13 @@ end
 
 function decorooms()
 	--★ just stick them in this function?
- local funcs,func={
+ local funcs,func,placemax,curr={
    --deco_dirt,
    deco_torch,
    --deco_carpet,
   -- deco_farn,
   deco_vase
-  },decovase
+  },decovase,6
  
  for r in all(rooms) do
  	
@@ -1776,45 +1890,45 @@ function placechest(r)
 	 mset(x,y,10)
 end
 __gfx__
-000000000000000000000000660606600ccccc0000bbb00000bbb00000bbb000000000000000000000000000000000000cccccc0000000000000000000000000
-00000000000000000000000000000000cccc0cc00b000b000b000b000b000b0000cccc0000cccc0000aaaa0000000000c0c00c0c00000000cc00000055000000
-00700700000000000000000060666060cc0000c00b000b000b000b000b000b00cc0000cccc0000ccaa0000aa0000000000c00c0000000000cc0cc00055055000
-00077000000000000000000000000000ccc0ccc030bbb03030bbb03030bbb030c000000cc000000ca000000a00000000c000000c00000000cc0cc0c055055050
-00077000000000000000000000000000c0000cc0330003303300033033000330c000000cc000000ca000000a000000000c0aa0c000000000cc0cc0c055055050
-00700700000000000000000000000000cc0cccc03333333033333330333333300ccaacc00ccaacc00aa99aa000000000cc0aa0cc00000000000cc0c000055050
-000000000000d000000000000000d000ccccccc0033333000333330003333300000000000000000000000000000000000c0000c000000000000000c000000050
-0000000000000000000000000000000000000000003330000033300000333000ccccccccccccccccaaaaaaaa00000000cc0cc0cc000000000000000000000000
-00006660666000006660000066606660000066606660000000000000000000000000000006666660066666006666660066606660666666600000666066600000
-00006660666000006660000066606660000066606660000000000000000000000000000066666660666666606666666066606660666666600000666066600000
-00000660660000006600000066600660000006606600000000000000000000000000000066666660666666606666666066606660666666600000066066600000
-00000000000000000000000066600000000000000000000000000000000000000000000066600000666066600000666066606660000000000000000066600000
-66000660660006606666666066600000660000000000066000000660666666606600000066606660666066606660666066606660666666606666666066600660
-66606660666066606666666066600000666000000000666000006660666666606660000066606660666066606660666066606660666666606666666066606660
-66606660666066606666666066600000666000000000666000006660666666606660000066606660666066606660666066606660666666606666666066606660
+000000000000000000000000660606606606066000aaa00000aaa00000aaa000d0d0d07770d0d0d000000000000000000cccccc0000000000000000000000000
+00000000000000000000000000000000000000000a000a000a000a000a000a00000007777700000000aaaa0000000000c0c00c0c00000000cc00000055000000
+00700700000000000000000060666060606660660a000a000a000a000a000a00d0d077070770d0d0aa0000aa0000000000c00c0000000000cc0cc00055055000
+000770000000000000000000000000000000000090aaa09090aaa09090aaa0900000700700700000a000000a00000000c000000c00000000cc0cc0c055055050
+0007700000000000000000000000000066660660990009909900099099000990d0d077707770d0d0a000000a000000000c0aa0c000000000cc0cc0c055055050
+007007000000000000000000000000000000000099999990999999909999999000000777770000000aa99aa000000000cc0aa0cc00000000000cc0c000055050
+000000000000d000000000000000d00066066666099999000999990009999900d0d0d07770d0d0d000000000000000000c0000c000000000000000c000000050
+00000000000000000000000000000000000000000099900000999000009990000000007770000000aaaaaaaa00000000cc0cc0cc000000000000000000000000
+08800080000000000000000000000000800008888800000000000000000088800cc000c0000000000000000000c0c000000000c0c0c000000000000000000000
+08880808800000000000000000000000080088880080000000000000000000800ccc0c0cc0000000000000000c0c0c0c0c000c0ccc0c00000000000000000000
+8088800888000000000000000000000000880080000800000000000000000880c0ccc00ccc000000000000000000ccc0c0ccc000cc0000000000000000000000
+008000080000000000000000000000000008808000088000000000000000008000c0000c00000000000000000000cc000cc0c00ccc0000000000000000000000
+008800888000000000000000000000000008008000008000000000000000088000cc00ccc000000000000000000cc000cc00c000cc0000000000000000000000
+008008080000000000000000000000000008808800088008800000000000008000c00c0c000000000000000000cc0000cc00c00ccc000cc00000000000000000
+08880888800000000000000000000000000800808880808800000000000008800ccc0cccc00000000000000000c0000ccc00ccc0cc00cc000000000000000000
+8080080800000000000000000000000000088080000080000000000000000080c0c00c0c00000000000000000cc00000cc00c00ccc000000c0cc000000000000
+008808088008888008880080800066600008008000008080800888000088808000cc0c0cc00cccc00ccc00cc00c0000ccc00c000cc00c0cccc00c00000000000
+0008080800808008008800880006666600088080888088080080008008000880000c0c0c00c0c00c00cc00c00cc00000cc00cccccc000c00c0000c0000000000
+00008080080080088080008000668686600800880008808808000008800000800000c0c00c00c00cc0c000cc00c0000ccc00c000cc00cc0cc000cc0000000000
+000008000880800880800088006886886008808000008008088888888000088000000c000cc0c00cc0c000c00cc00000cc00c00ccc000c00c0000c0000000000
+00008000080080088080008000666866608800800000808808000000800000800000c0000c00c00cc0c000cc00cc00000c00c000cc00cc0cc000cc0000000000
+0008008808808008808000880006666600000080000088080800000880000080000c00cc0cc0c00cc0c000c000ccc000ccc0c00ccc000c00c0000c0000000000
+008008008080800800880080000066600008808000088008008000800800088000c00c00c0c0c00c00cc00c0000ccccc00ccc0cccccc0c0ccc00ccc000000000
+0008080008088880000888088000666000800888008800008008880000888008000c0c000c0cccc0000ccc0c0000ccc00000ccc00cc000c0c0000c0000000000
+0008800080000000000000000000000008000088880000000000000000000000000cc000c0000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8888888888888888888888888888888880800888888888888888888888888888cccccccccccccccccccccccccccccccccccccccccccccccccccccccc00000000
+00000000000000000000000000000000000880000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+08888888888888888888888888888888888888888888888888888888888888800cccccccccccccccccccccccccccccccccccccccccccccccccccccc000000000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-666d6660666d6660dddd666066666660666666606666666000006660066666006660000006666660666066606666660066606660666000006660666066666660
-666d6660666d6660dddd666066666660666666606666666000006660666666606660000066666660666066606666666066606660666000006660666066666660
-66ddd66066ddd660dddd666066666660666666606666666000006660666666606660000066666660660006606666666066000660660000006600666066666660
-ddddddd0ddddddd0dddd6660ddddddd0666dddd0dddd666000006660666066606660000066600000000000000000666000000000000000000000666000000000
-ddddd66066ddddd066dd6660ddddd660666dddd0dddd666000006660666666606660000066666660660006606666666000000000660000000000666066000000
-dddd6660666dddd0666d6660dddd6660666dddd0dddd666000006660666666606660000066666660666066606666666000000000666000000000666066600000
-dddd6660666dddd0666d6660dddd6660666dddd0dddd666000006660066666006660000006666660666066606666660000000000666000000000666066600000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-666d6660666d6660666d666066666660666dddd0dddd6660dddd666066666660666dddd0666d6660666d6660666d6660dddd6660ddddddd00000000000000000
-666d6660666d6660666d666066666660666dddd0dddd6660dddd666066666660666dddd0666d6660666d6660666d6660dddd6660ddddddd00000000000000000
-666dd66066ddd66066dd666066666660666dddd0dddd6660ddddd6606666666066ddddd0666d6660666d6660666d6660ddddd660ddddddd00000000000000000
-666dddd0ddddddd0dddd6660ddddddd0666dddd0dddd6660ddddddd0ddddddd0ddddddd0666dddd0666d6660dddd6660ddddddd0ddddddd00000000000000000
-666dd6606666666066dd666066ddd6606666666066666660ddddddd0ddddddd0ddddddd0666666606666666066666660ddddd66066ddd6600000000000000000
-666d666066666660666d6660666d66606666666066666660ddddddd0ddddddd0ddddddd0666666606666666066666660dddd6660666d66600000000000000000
-666d666066666660666d6660666d66606666666066666660ddddddd0ddddddd0ddddddd0066666600666660066666600dddd6660666d66600000000000000000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-0499994004999940000066666666000006660000066600000666000004999940000000000a00000000000000000000a000000000d0d0d0d06606066000000060
+0499994004999940000066666666000006660000066600000666000004999940000000000a00000000000000000000a000000000d0d0d0d00000000000000060
 04999944049999400006dccccccd60000060000000600000006000004499994044444444900000000a00000000000009000000a0000000000000000000000000
-0499949904999940006dcc0000ccd600088700000cc7000005570000994999409999999999000000990000000000009900000099d0d0d0d06066606006000060
+0499949904999940006dcc0000ccd600088700000cc7000005570000994999409999999999000000990000000000009900000099d0d0d0d00000000006000060
 049949990499994000ddc000000cdd0088888000ccccc00055555000999499409999999900000000000000000000000000000000000000000000000000600600
-049499990499994000ddc000000cdd00088800000ccc0000055500009999494099999999cc000000cc000000000000cc000000ccd0d0d0d0d0d0d0d006000006
+049499990499994000ddc000000cdd00088800000ccc0000055500009999494099999999cc000000cc000000000000cc000000ccd0d0d0d00000000006000006
 044999990499994000ddc000000cdd000000000000000000000000009999944099999999000d0000000d0000000d0000000d00000000000000000000000d0000
-044444440499994000ddc000000cdd000000000000000000000000004444444044444444c0000000c00000000000000c0000000cd0d0d0d0d0d0d0d000000060
+044444440499994000ddc000000cdd000000000000000000000000004444444044444444c0000000c00000000000000c0000000cd0d0d0d00000000000000060
 000000000499994000ddc000000cdd00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600
 00000000000000000000000006666600066666000666666006666600666666000660660006666600000066606660000066666660000006600000666066000000
 00000000000000000000000066666660666666606666666066666660666666606660666066666660000066606660000066666660000066600000666066600000
@@ -1840,14 +1954,14 @@ dddd6660666dddd0666d6660dddd6660666dddd0dddd666000006660066666006660000006666660
 00000000000000000000000066666660666066606666666066666660666666606660000000006660000066606660666000000000666000000000000000000000
 00000000000000000000000066666660666006600666660006666600066666006660000000006660000066606660666000000000666000000000000000000000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-00000000070077770007000000000000000000000000000000000077700070000070000000000000000000000000000000000000000000000000007770000000
-00000000700700077770000000000000000000000000000000000000700070000070000000000000000000000000000000000000000000000000000070000000
-00000007007000077700000000000000000000000000000000000007700070000070000000777770700000000000000000000000000000000000000770000000
-00000070070000070700000000000000000000000000000000000000700070000070000007000077000000000000000000000000000000000000000070000000
-00000770770000070000000000000000000000000000000000000007700070000070000070000007000000000000000000000000000000000000000770000000
-00000077070000070000000000000000000000000000000000000000700070000070000770000000000000000000000000000000000000000000000070000000
-00000770070000070000000000000000000000000000000000000007700070000070007070000000007000000000000000000000000000000000000770000000
-00000070070000070000000000000000000000000000000000000000700070000070007070000000070000000000000000000000000000000000000070000000
+00000000700777700007000000000000000000000000000000000077700070000070000000000000000000000000000000000000000000000000007770000000
+00000000007000777770000000000000000000000000000000000000700070000070000000000000000000000000000000000000000000000000000070000000
+00000007070000707700000000000000000000000000000000000007700070000070000000777770700000000000000000000000000000000000000770000000
+00000070700000700700000000000000000000000000000000000000700070000070000007000077000000000000000000000000000000000000000070000000
+00000770700000770000000000000000000000000000000000000007700070000070000070000007000000000000000000000000000000000000000770000000
+00000077700000700000000000000000000000000000000000000000700070000070000770000000000000000000000000000000000000000000000070000000
+00000770700000700000000000000000000000000000000000000007700070000070007070000000007000000000000000000000000000000000000770000000
+00000070700000700000000000000000000000000000000000000000700070000070007070000000070000000000000000000000000000000000000070000000
 00000770070000070007770007770777700077700007770000777707700070000070007070000000700000777077707770077770070777700077770770000000
 00000070000000070000770007007700070770070070007007700077700070000070000707777777777000007007000700707007007700070770007770000000
 00000770000000070000700007000700077700000700000770700000700070000070000070000070000700077007000707007007700700077070000070000000
@@ -1856,54 +1970,51 @@ dddd6660666dddd0666d6660dddd6660666dddd0dddd666000006660066666006660000006666660
 00000070000000070000700007007700000000007700000770700007700070000070000000070000000707007007000707707007707700007070000770000000
 00000770000000070000770007000700007000007070007007700077700070000070007700700000000077077000700700707007000700000770007770000000
 00000077000000070070077770707770000777770007770000777700770070000070070777000000000007007770077700077770007770000077770077000000
-00000007700000070700000000000000000000000000000000000000000070000070700770000000000070000000000070000000000000000000000000000000
-00000000770000077000000000000000000000000000000000000000000070000070700777000000000700000000000000000000000000000000000000000000
-00000000077777770000000000000000000000000000000000000000000070000070077007777777777000000000000000000000000000000000000000000000
-00000000000000000000000000000000000000000000000000000000000070000070000000000000000000000000000000000000000000000000000000000000
-00000000000000000000000000000000000000000000000000000000000070000070000000000000000000000000000000000000000000000000000000000000
-00000000000000000000000000000000000000000000000000000000000070000070000000000000000000000000000000000000000000000000000000000000
-00000000000000000000000000000000000000000000000000000000000070000070000000000000000000000000000000000000000000000000000000000000
-00000000000000000000000000000000000000000000000077777777777777777777777777777770000000000000000000000000000000000000000000000000
-00000077700000000000700700700000000070070070000077777777777777777777777777777770000000000000000000000000000000000000000000000000
-00000777770000000000700700700000000070070070000077000000000070000070000000000770000000000000000000000000000000000000000000000000
-00007707077000000000700700700000000070070070000077000000000070000070000000000770000000000000000000000000000000000000000000000000
-00007007007000000000700700700000000007070700000077700000000070000070000000007770000000000000000000000000000000000000000000000000
-00007770777000000000700700700000000007070700000007700000000070000070000000007700000000000000000000000000000000000000000000000000
-00000777770000000000700700700000000000777000000000700000000070000070000000007000000000000000000000000000000000000000000000000000
-00007077707000000000700700700000000000777000000000000000000070000070000000000000000000000000000000000000000000000000000000000000
-00007077707000000000700700700000000000070000000000000000000070000070000000000000000000000000000000000000000000000000000000000000
-00000008000000090000000000000000006660000066600000000000000000000606060006060600000000000000000000666000000000022200000000000000
-00600604006006040060060800600609066666000666660000666000006660006060660060606600060606000606060006666600000000220200000000000000
-0066660400666604006666040066660466660660666606600666660006666600060666600606666060606600606066000660f000000002200020000000000000
-066868640668686406686804066868046660606066606060666606606666066060666660606666600606666006066660056fff000000020b0b20000000000000
-666666646666666466666664666666646666666066666660666060606660606006666666066666666066666660666666555666f0000002000020000000000000
-606666046066660460666664606666640666660006666600066666000666660066660606666606060666060606660606f5566600000002000020000000000000
-06666600066666000666660406666604066066000660660006606600066066000066666600666666006666660066666605555500000000200200b00000000000
-66666600666666006666660066666600006060000060600000606000006060000006666000066660000666600006666004000400000002222220b00000000000
-06000600060006000000000000000000000660000006600000000000000000000000000c0000000c000000000000000000000000000002222222400000000000
-06666600066666000600060006000600006606000066060000066000000660000060060c0060060c0000000c0000000c00000000000022222222700000000000
-06696900066969000666660006666600066060600660606000660600006606000066660c0066660c0060060c0060060c00000000000022222222400000000000
-06666600066666000669690006696900066606600666066006606060066060600666066c0666066c0066660c0066660c00000000000022222220400000000000
-666666606666666066666660666666600666666006666660066606600666066066666664666666640666066c0666066c00000000000072222220400000000000
-66666660666666606666666066666660066666600666666066666666666666666066660060666600666666646666666400000000000002222222400000000000
-06000600060006000000600000006000006666000066660066666666666666660666660006666600606666006066660000000000000022222222400000000000
-00000000000000000000000000000000000000000000000000000000000000006666660066666600066666000666660000000000000222222222420000000000
-66606606666066060000000000000000006666000066660000000000000000000000000000000000000000000000000000000000000000000000000000000000
-06666666066666666660660666606606066666600666666000666600006666000000000000000000000000000000000000000000000000000000000000000000
-06660606066606060666666606666666666600666666006606600660066006600000000000000000000000000000000000000000000000000000000000000000
-006666600066666006660606066606066660bb066660bb06660bb066660bb0660000000000000000000000000000000000000000000000000000000000000000
-060666660606666600666660006666606660bb066660bb06660bb066660bb0660000000000000000000000000000000000000000000000000000000000000000
-00066606000666060606666606066666666600666666006666600666666006660000000000000000000000000000000000000000000000000000000000000000
-00066600000666000006660600066606066666600666666006666660066666600000000000000000000000000000000000000000000000000000000000000000
-00600600006006000000600000006000006666000066660000666600006666000000000000000000000000000000000000000000000000000000000000000000
-0066600c0066600c0000000000000000006660000066600000666000006660000000000000000000000000000000000000000000000000000000000070000000
-0666660c0666660c0066600c0066600c066666000666660006666600066666000000000000000000000000000000000000000000000000000000000077000000
-0660000c0660000c0666660c0666660c066060000660600006606000066060000000000000000000000000000000000000000000000000000000000077700000
-0666060c0666060c0660000c0660000c666666606666666066666660666666600000000000000000000000000000000000000000000000000000000077000000
-6666664c6666664c0666060c0666060c066606000666060006660600066606000000000000000000000000000000000000000000000000000000000070000000
-46666600466666000666664c0666664c666666006666660006666600066666000000000000000000000000000000000000000000000000000000000000000000
-06666600066666004666660046666600066666000666660066666600666666000000000000000000000000000000000000000000000000000000000000000000
-05000500050005000500050005000500066660000666600006666000066660000000000000000000000000000000000000000000000000000000000000000000
+00000007700000070700000000000000000000000000000000000000000070000070700770000000000070000000000070000000000000002bbbbbbb2b2b2bbb
+0000000077000007700000000000000000000000000000000000000000007000007070077700000000070000000000000000000000000000bb22bb2bb2bb2bb2
+0000000007777777000000000000000000000000000000000000000000007000007007700777777777700000000000000000000000000000bbbb22bbbbbbb2bb
+00000000000000000000000000000000000000000000000000000000000070000070000000000000000000000000000000000000000000002b2bbbbbb2b2bbbb
+0000000000000000000000000000000000000000000000000000000000007000007000000000000000000000000000000000000000000000b2bb2b222bbbb2b2
+0000000000000000000000000000000000000000000000000000000000007000007000000000000000000000000000000000000000000000bbbbb2bbb2b2bbbb
+00000000000000000000000000000000000000000000000000000000000070000070000000000000000000000000000000000000000000002222bbbb2bb2bb2b
+0000000000000000000000000000000000000000000000007777777777777777777777777777777000000000000000000000000000000000bb2bb2bb2bb2b2b2
+00000077700000000000700700700000000070070070000077777777777777777777777777777770d0d0d0d00880880880880880d0d0d0d00000000000000000
+00000777770000000000700700700000000070070070000077000000000070000070000000000770000000000880880880880880000000000000000000000000
+00007707077000000000700700700000000070070070000077000000000070000070000000000770d0d0d008088088088088088080d0d0d00000000000000000
+00007007007000000000700700700000000007070700000077700000000070000070000000007770000000880880880880880880880000000000000000000000
+00007770777000000000700700700000000007070700000007700000000070000070000000007700d0d0088008808808808808800880d0d00000000000000000
+00000777770000000000700700700000000000777000000000700000000070000070000000007000000088080880880880880880808800000000000000000000
+00007077707000000000700700700000000000777000000000000000000070000070000000000000d00880880880880880880880880880d00000000000000000
+00007077707000000000700700700000000000070000000000000000000070000070000000000000008808800880880880880880088088000000000000000000
+000000080000000900666000000000000606060000000000060006000000000000066000000000000000000c0000000000666000000000022200000008888000
+006006040060060406666600006660006060660006060600066666000600060000660600000660000060060c0000000c06666600000000220200000088878800
+006666040066660466660660066666000606666060606600066969000666660006606060006606000066660c0060060c0660f000000002200020000088887800
+066868640668686466606060666606606066666006066660066666000669690006660660066060600666066c0066660c056fff000000020b0b20000088888800
+66666664666666646666666066606060066666666066666666666660666666600666666006660660666666640666066c555666f0000002000020000088888800
+606666046066660406666600066666006666060606660606666666606666666006666660666666666066660066666664f5566600000002000020000008888000
+06666600066666000660660006606600006666660066666606000600000060000066660066666666066666006066660005555500000000200200b00000000000
+66666600666666000060600000606000000666600006666000000000000000000000000000000000666666000666660004000400000002222220b00000000000
+6660660600000000006666000000000000666000006660000066600c000000000000000000000000000000000000000000000000000002222222400000000000
+0666666666606606066666600066660006666600066666000666660c0066600c0000000000000000000000000000000000000000000022222222700000000000
+0666060606666666666600660660066006606000066060000660000c0666660c0000000000000000000000000000000000000000000022222222400000000000
+00666660066606066660bb06660bb06666666660666666600666060c0660000c0000000000000000000000000000000000000000000022222220400000000000
+06066666006666606660bb06660bb06606660600066606006666664c0666060c0000000000000000000000000000000000000000000072222220400000000000
+000666060606666666660066666006666666660006666600466666000666664c0000000000000000000000000000000000000000000002222222400000000000
+00066600000666060666666006666660066666006666660006666600466666000000000000000000000000000000000000000000000022222222400000000000
+00600600000060000066660000666600066660000666600005000500050005000000000000000000000000000000000000000000000222222222420000000000
+66606606666066060000000000000000006666000066660000000000000000000888888808888888888888808888888000000000000000000000000000000000
+06666666066666666660660666606606066666600666666000666600006666008800008088000080080000880800008800000000000000000000000000000000
+06660606066606060666666606666666666600666666006606600660066006608088880880888808808888088088880800000000000000000000000000000000
+006666600066666006660606066606066660bb066660bb06660bb066660bb0660880008808800088880008808800088000000000000000000000000000000000
+060666660606666600666660006666606660bb066660bb06660bb066660bb0668808882b880888bb2b8880882b88808800000000000000000000000000000000
+0006660600066606060666660606666666660066666600666660066666600666808b2b22808b2bbbb2b2b8082bb2b80800000000000000000000000000000000
+000666000006660000066606000666060666666006666660066666600666666008bbb2bb08b2b22bb2bbbb80bbbb2b8000000000000000000000000000000000
+00600600006006000000600000006000006666000066660000666600006666008bb2b2bb82bbbbb2bb222b282bb22bb800000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000070000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000077000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000077700000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000077000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000070000000
 __label__
 00000000000000000000000000000000000000000000000000000000000000777000000000000000000000000000000000000000000000000000000000000000
 00000000000000000000000000000000000000000000000000000000000007777700000000000000000000000000000000000000000000000000000000000000
@@ -2035,26 +2146,26 @@ __label__
 00000000000000000000000000000000000000000000000000000000000000070000000000000000000000000000000000000000000000000000000000000000
 
 __gff__
-0000050003030303030303050703020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003030000000000030300000000000000050505050505050505050505050505050505050505050505050505050505050505050305050505050505050505050000
-0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+0000050000030303000003000700020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003030000000000030300000000050000858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585850000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003030000000000000000000000050500000000000000000000000000000003030303000000000000000000000000000303000000000000000000000000000000000000000000000000000000000000000001
 __map__
-3f3f3f3f3f3f3fb0b13f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02020202020202020202020202020202020202020202020202020202020202023f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-8081823f3f3f868788898a8b8c3f8e8f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02010101010101010101010101010102020202020202020202020202020202023f3f0000000000000000000000003f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-909192939495969798999a9b9c9d9e9f3f3f3f3f3f3f505151523f3f3f3f3f3f02010101010101010101010101010102020202020202020202020202020202023f003f000000000000000000003f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-a0a1a23f3f3fa6a7a8a9aa8c8c3f3f3f3f3f3f3f3f3f600e03623f3f3f3f3f3f02010101010101010101010101010102020202020202020202020202020202023f00003f00000000000000003f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3fb6b7b8b93f8c3f3f3f3f3f3f3f3f50516442436351523f3f3f3f02010101010202020202020101010102020202020202020202020202020202023f00000002020202020202023f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60030301cc0303623f3f3f3f02010101010201010101020101010102020202020202020202020202020202023f000000020741cdce4107023f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60010101010101623f3f3f3f02010101010201010401020101010102020202020202020202020202020202023f000000020741ddde4107023f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f604901010a014b623f3f3f3f02010101010201010101020101010102020202020202020202020202020202023f00000002074048484707023f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60010101010101623f3f3f3f02010101010202020102020101010102020202020202020202020202020202023f00000002010101010101023f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60070101010107623f3f3f3f020101010101020f0102010101010102020202020202020202020202020202023f00000002010101010101023f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60070701010707623f3f3f3f02010101010102020202010101010102020202020202020202020202020202023f00003f02010101010101023f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f70717154015371723f3f3f3f02010101010101010101010101010102020202020202020202020202020202023f003f000201020202020102003f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f3f3f3f600f623f3f3f3f3f3f02010101010101010101010101010102020202020202020202020202020202023f3f0000020e020202020f0200003f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f3f3f3f3f713f3f3f3f3f3f3f02020202020202020202020202020202020202020202020202020202020202023f3f3f3f02020202020202023f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f000000000000000000000202020202020202020202020202020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb4b53f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f000000000000000000000202020202020202020202020202020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb0b13f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02020202020202023f3f3f02023f3f3f3f020202020202020202020202020202020202020202020202020202020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8081823f3f3f868788898a8b8c3f8e8f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f0202020202020202020202020202020202020202020202020202020202020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+909192939495969798999a9b9c9d9e9f3f3f3f3f3f3f505151523f3f3f3f3f3f023f3f3f3f3f3f3f3f3f3f3f3f3f3f020202020202020202020202020202020202003f02020202020202020202020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+a0a1a23f3f3fa6a7a8a9aa8c8c3f3f3f3f3f3f3f3f3f600e03623f3f3f3f3f3f023f3f505151515151515151515152020202020202020202020202020202020202000002020202020202020202020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3fb6b7b8b93f8c3f3f3f3f3f3f3f3f50516442436351523f3f3f3f3f3f3f604d4d4d4d08094d4d4d4d620202020202020202020202020202020202020000003f3f3f3f3f3f3f3f3f020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f6003030acc0303623f3f3f3f023f3f604d4d4dbae8eabd4d4d4d620202020202020202020202020202020202020202023f3f3f3f3f3f3f3f3f3f0202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f600a0a0a0a0a0a623f3f3f3f023f3f604d4d4dbbaeafbc4d4d4d62020202020202020202020202020202020202020202505151515151515152020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60490a0a0a0a4b623f3f3f3f023f3f604d4d4dbbafaebc4d4d4d620202020202020202020202020202020202020202026003030303030303623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f600a0a0a0a0a0a623f3f3f3f3f3f3f604d4d4dbbaeafbc4d4d4d620202020202020202020202020202020202020202026049cfcdce01cf4b623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60070a0a0a0a07623f3f3f3f3f3f3f7449cdce0101010101014b74020202020202020202020202020202020202020202600101ddde010101623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f6007070a0a0707623f3f3f3f3f3f3f7449ddde0101010101014b7402020202020202020202020202020202020202023f604901010101014b623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f7071540a0a5371723f3f3f3f3f3f3f744901010101010101010f74020202020202020202020202020202020202023f0060010101cf010101623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f3f3f60010f623f3f3f3f3f3f3f3f3f717171717171717171717171020202020202020202020202020202020202020002600e01010101010f62003f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f3f3f3f71713f3f3f3f3f3f3f023f3f023f023f3f3f3f0202023f3f3f02020202020202020202020202020202020202027071717171717171723f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f000000000000003f3f3f3f02020202020202020202020202020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb4b53f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f0000000000000000003f3f02020202020202020202020202020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f0000000000000000003f3f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -2108,10 +2219,10 @@ __sfx__
 001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+000100002e7502e7502e7502e7502d7502d7502d7502c7502b7502a75026750237502375024750267502875028750000000000000000000000000000000000000000000000000000000000000000000000000000
+00100000277502675024750227502175020750207502075020750207502075020750207502c7002f7003370000000000000000000000000000000000000000000000000000000000000000000000000000000000
+000100001c7401b7501b7501b7501b7501c7601d7601e7401f7302072025720297302973000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+491000001a7301a7301c7301d7301f7300000021730000002473000000247302b7303073000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 57010000167401d640167401e6401d640177401c640177401b650167501e6501e6501e6501d650000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 47010000167401d640167401e6401d640177401c640177401b650167501e6501e6501e6501d650000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 b10100002971027710237101f7101a710187001570013700187002d71035710357103471019700177001770019700197001a7001b7001b7001a7001a70019700177001570014700137001270011700107000f700
