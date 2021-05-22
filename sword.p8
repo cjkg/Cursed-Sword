@@ -31,7 +31,7 @@ function _init()
 	t=0
 	cartdata(cursed_sword)
 
-	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer"],"mob_atk":[1,1,1,2,2,3,3,3,3,4],"mob_hp":[10,1,1,2,3,5,6,7,7,8],"mob_los":[5,4,10,5,5,5,4,4,4,5],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203]],"mob_col":[12,11,6,8,14,11,7,9,9,13],"mob_def":[0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1],"mob_quench":[0,10,10,10,10,10,10,5,5,5],"mob_floor_min":[0,0,3,4,5,6,7,8,9,9,10],"mob_floor_max":[0,3,7,8,9,10,10,11,11,12,12],"mob_spec":["","","","","","","","","","",""],"maxmons":[6,10,14,0,18,20,22,0,22,21,20],"minmons":[3,5,7,0,9,10,11,0,12,13,13,0],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":4},"relic":{"mult":5}},"powergemstypes":["doomsword","shovelsword","skippingstone","vampiretooth","witcheye","cleromancer"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 20%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall square"," for 25 ⧗! be careful!"],"price":750},"skippingstone":{"name":"skipping stone","color":8,"desc":[" bump walls to skip"," a turn"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" 2x atk when ⧗"," is below 25!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see what happens!"],"price":500}},"vases":[1,1,1,1,1,1,5,7,7],"npcs":{},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
+	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer"],"mob_atk":[1,1,1,2,2,2,2,3,3,4],"mob_hp":[10,1,1,2,3,5,6,7,7,8],"mob_los":[5,4,10,5,5,5,4,4,4,5],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203]],"mob_col":[12,11,6,8,14,11,7,9,9,13],"mob_def":[0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1],"mob_quench":[0,10,10,10,10,10,10,5,5,5],"mob_floor_min":[0,0,3,4,5,6,7,8,9,9,10],"mob_floor_max":[0,3,7,8,9,10,10,11,11,12,12],"mob_spec":["","","","","","","","","","",""],"maxmons":[6,10,14,0,18,20,22,0,22,21,20],"minmons":[3,5,7,0,9,10,11,0,12,13,13,0],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":5},"relic":{"mult":10}},"powergemstypes":["doomsword","shovelsword","skippingstone","vampiretooth","witcheye","cleromancer","chain link"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 50%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall square"," for 25 ⧗! be careful!"],"price":750},"skippingstone":{"name":"skipping stone","color":8,"desc":[" bump walls to skip"," a turn"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" randomly drain 1♥"," when you strike!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see what happens!"],"price":500},"chain link":{"name":"chain link","color":8,"desc":["press 🅾️ to attack","nearby enemies for 50⧗"]}},"vases":[1,1,1,1,1,1,5,5,7,7,7],"npcs":{},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
 	mob_name,mob_atk,mob_hp,mob_los,mob_ani,mob_col,mob_def,mob_int,mob_quench,mob_minf,mob_maxf,mob_spec,minmons,maxmons=_gt.mob_name,_gt.mob_atk,_gt.mob_hp,_gt.mob_los,_gt.mob_ani,_gt.mob_col,_gt.mob_def,_gt.mob_int,_gt.mob_quench,_gt.mob_floor_min,_gt.mob_floor_max,_gt.mob_spec,_gt.minmons,_gt.maxmons
 	gem_types,gem_qual,gem_props,powergemsprops,powergemstypes,vases=_gt.gem_types,_gt.gem_qual,_gt.gems,_gt.powergemsprops,_gt.powergemstypes,_gt.vases
 
@@ -74,8 +74,8 @@ function startgame()
 	p_mob=addmob(1,-100,-100)
 	--★
 	p_t=0
-	--keep dig,xray at the end. will try to cut later ★
-	kills,luck,thirst,thirstrate,gold,turn=0,0,50,1,0,0
+	
+	kills,luck,thirst,thirstrate,gold,turn=0,0,250,1,0,0
 	clerotype={"♥","⧗"}--,"◆"}
 	inv,eqp,wind,float={},{},{},{},{}
 	
@@ -83,6 +83,7 @@ function startgame()
 
 	_upd,_drw=update_game,draw_game
 	genfloor(0)
+	
 end
 -->8
 --updates
@@ -97,6 +98,7 @@ function update_game()
 		dobutton(buttonbuff)
 		buttonbuff=-1
 	end
+	debug[1]=thirst
 end
 
 
@@ -159,7 +161,6 @@ function update_pturn()
 	if p_t==1 then
 		_upd=update_game
 		trig_step()
-		debug[1]=skipper
 		if skipper then skipai=false end
 		if checkend() and not skipai then
 			do_ai()
@@ -168,7 +169,7 @@ function update_pturn()
 			--★ put floor list in json
 				if thirst>0 and not isin(floor,{0,12}) then
 					thirst-=1
-				elseif thirst==0 and not isin(floor,{0,4,8,12}) then
+				elseif thirst==0 and not isin(floor,{0,12}) then
 					showmsg("your sword feasts on you!",120)					
 					p_mob.hp-=1
 				end
@@ -214,8 +215,8 @@ function dobutton(button)
 		moveplayer(dirx[button+1],diry[button+1])
 	elseif button==5 then
 		showinv()
-	elseif button==4 and skipper then
-		
+	elseif button==4 and chain then
+		dochain()
 	end
 end
 
@@ -244,12 +245,7 @@ function draw_game()
 	for i=#mob,1,-1 do
 		drawmob(mob[i])
 	end
-	--[[
-		for x,y in ipairs(fog) do
-			rectfill2(x*8,y*8,8,8,0)
 		
-	end]]
-	
 	for x=0,15 do
 		for y=0,15 do
 			if fog[x][y]==1 then
@@ -313,10 +309,6 @@ function animap()
 		end
 	end
 end
-
-
-
-
 -->8
 --tools
 
@@ -591,7 +583,7 @@ end
 
 
 -->8
- --gameplay
+--gameplay
 
 function moveplayer(dx,dy)
 	local destx,desty=p_mob.x+dx,p_mob.y+dy
@@ -614,12 +606,10 @@ function moveplayer(dx,dy)
 		else
 			if fget(tle,1) then
 				trig_bump(tle,destx,desty)
+			elseif dig and fget(tle,7) then
+					dodig(destx,desty)	
 			else
 				skipai=true
-				if dig and fget(tle,7) then
-					--★ save tokens?
-					dodig(destx,desty)
-				end
 			end
 		end
 	end
@@ -629,12 +619,17 @@ end
 function trig_bump(tle,destx,desty)
 	if tle==12 then
 		sfx(62)
-		mset(destx,desty,1)
+		--★ pretty walls take 17 tokens
+		local tleabove=1
+		if fget(mget(destx,desty-1),7) then
+			tleabove=3
+		end
+		mset(destx,desty,tleabove)
 	elseif tle==5 then
 		sfx(61)
 		local amt=ceil((floor+1)/3)+flr(rnd(luck))
 		treasure("♥",amt,destx,desty,8)
-		mset(destx,desty,79)
+		mset(destx,desty,78)
 	--[[elseif tle==6 then
 		sfx(61)
 		local amt=5*flr(ceil((floor+1)/2)+rnd(luck+3))
@@ -644,7 +639,7 @@ function trig_bump(tle,destx,desty)
 		win=true
 	elseif tle==7 then
 		sfx(61)
-		mset(destx,desty,79)
+		mset(destx,desty,78)
 	elseif tle==10 then
 		treasure("●","",destx,desty,11)		
 	elseif tle==204 then
@@ -707,6 +702,9 @@ function hitmob(atkm,defm)
 		if clero and flr(rnd(101))+luck>50 then
 			treasure("bonus",1,atkm.x,atkm.y-1,11)
 		end
+		if vampire and flr(rnd(101))+luck>50 then
+			treasure("vamp!","",atkm.x,atkm.y-1,14)
+		end
 	end
 	
  defm.hp-=dmg
@@ -756,7 +754,8 @@ function checkend()
 end
 
 function updatestats()
-	dig,xray,clero,skipper=false,false,false,false
+	--★ cut the falses somehow?
+	dig,xray,clero,skipper,chain=false,false,false,false,false
 	local atk,def,hpmax,timer,lck=1,1,p_mob.basehpmax,1,0
 	--multiplier loop
 	for i=1,3 do
@@ -774,11 +773,14 @@ function updatestats()
 					clero=true
 				elseif nm=="skipping stone" then
 					skipper=true
+				elseif nm=="chain link" then
+					chain=true
+				elseif nm=="vampire tooth" then
+					vampire=true
 				end
 			end
 		end
 	end
-
 	--addition loop
 	for i=1,3 do
 		local m=eqp[i]
@@ -811,8 +813,7 @@ function treasure(txt,amt,destx,desty,col)
 	end
 		
 	if txt=="♥" then
-		local hpmod=p_mob.hp+amt
-		p_mob.hp=min(hpmod,p_mob.hpmax)
+		p_mob.hp=min(p_mob.hp+amt,p_mob.hpmax)
 	--[[elseif txt=="◆" then
 		local goldmod=gold+amt
 		gold=min(goldmod,999)]]
@@ -826,6 +827,8 @@ function treasure(txt,amt,destx,desty,col)
 			mset(destx,desty,10)
 			sfx(56)
 		end
+	elseif txt=="vamp!" then
+		p_mob.hp=min(p_mob.hp+1,p_mob.hpmax)
 	elseif txt=="⧗" then
 		local thirstmod=thirst+amt
 		thirst=min(thirstmod,999)
@@ -834,10 +837,31 @@ function treasure(txt,amt,destx,desty,col)
 end
 
 function dodig(destx,desty)
-	if thirst>=25 then 
-		mset(destx,desty,1)
+	if thirst>=25 then
+		for i=1,8 do
+			local blastx,blasty=destx+dirx[i],desty+diry[i]
+			if not fget(mget(blastx,blasty),0) then
+				mset(blastx,blasty,79)
+			end
+		end
+		mset(destx,desty,79)
+		
+		--use p_mob x/y
 		sfx(47)
 		thirst=max(thirst-25,0)
+	end
+end
+
+function dochain()
+	if thirst>=50 then
+		for i=1,4 do	
+			local m=getmob(p_mob.x+dirx[i],p_mob.y+diry[i])
+			if m then
+				hitmob(p_mob,m)
+			end
+		end
+		thirst-=50
+		sfx(42)
 	end
 end
 -->8
@@ -1112,7 +1136,7 @@ function mobbump(mb,dx,dy)
 end
 
 function mobflip(mb,dx)
- mb.flp = dx==0 and mb.flp or dx<0
+ mb.flp=dx==0 and mb.flp or dx<0
 end
 
 function mov_walk(self)
@@ -1364,22 +1388,13 @@ end
 
 function mapgen()
  --★
- --todo
- --check for isolated rooms
- --re-add comments
- --items/chests
- --decos don't kill enty
- 
- --ranged monster attacks
- --laser sword? pop up window, kind of a throw
- --extendo sword, no pop up window, just double range
-	--skipping stone
- --unique, artifact, rare, uncommon, common in their own little arrays and then weigh it outside that.
-	--add bricks when door is horizontal and opened
- --add "in" tool
- --get rid of icky blocks
-	--create rubble on all surrounding floor when wall is destroyed
- --ghosts can move through walls, see through walls once targeted
+ --todo--re-add comments
+ --fix right side cutting off floats
+ --add simple store
+ --more gems
+ --make doomshock chainlightning below 5♥
+	--special attacks, special movements
+
  repeat
   copymap(48,0)
   rooms={}
@@ -1404,25 +1419,6 @@ function mapgen()
  spawnchests()
  spawnmobs()
  decorooms()
-end
-
-
---★
-
-
-----------------
--- rooms
-----------------
-
-
---★
-function snapshot()
- return
- --[[cls()
- map()
- for i=0,1 do
-  flip()
- end]]
 end
 
 ----------------
@@ -1531,7 +1527,6 @@ function digworm(x,y)
  
  repeat
   mset(x,y,1)
-  snapshot()
   if not cancarve(x+dirx[dr],y+diry[dr],false) or (rnd()<0.5 and stp>2) then
    stp=0
    local cand={}
@@ -1651,7 +1646,6 @@ function carvedoors()
    --★
    add(doors,d)
    mset(d.x,d.y,1)
-   snapshot()
    growflag(d.x,d.y,d.f1)
    del(flaglib,d.f2)
   end
@@ -1686,7 +1680,6 @@ function carvescuts()
    local d=getrnd(drs)
    add(doors,d)
    mset(d.x,d.y,1)
-   snapshot()
    cut+=1
   end
  until #drs==0 or cut>=3
@@ -1703,7 +1696,6 @@ function fillends()
     if cancarve(_x,_y,true) and tle!=14 and tle!=15 then
      filled=true
      mset(_x,_y,2)
-     snapshot()
     end
    end
   end
@@ -1922,14 +1914,14 @@ __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-0499994004999940000066666666000006660000066600000666000004999940000000000a00000000000000000000a000000000d0d0d0d00000000000000060
+0499994004999940000066666666000006660000066600000666000004999940000000000a00000000000000000000a000000000d0d0d0d0000000a000000060
 04999944049999400006dccccccd60000060000000600000006000004499994044444444900000000a00000000000009000000a0000000000000000000000000
-0499949904999940006dcc0000ccd600088700000cc7000005570000994999409999999999000000990000000000009900000099d0d0d0d00000000006000060
-049949990499994000ddc000000cdd0088888000ccccc00055555000999499409999999900000000000000000000000000000000000000000000000000600600
-049499990499994000ddc000000cdd00088800000ccc0000055500009999494099999999cc000000cc000000000000cc000000ccd0d0d0d00000000006000006
-044999990499994000ddc000000cdd000000000000000000000000009999944099999999000d0000000d0000000d0000000d00000000000000000000000d0000
-044444440499994000ddc000000cdd000000000000000000000000004444444044444444c0000000c00000000000000c0000000cd0d0d0d00000000000000060
-000000000499994000ddc000000cdd00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600
+0499949904999940006dcc0000ccd600088700000cc7000005570000994999409999999999000000990000000000009900000099d0d0d0d00a00007006000060
+049949990499994000ddc000000cdd0088888000ccccc000555550009994994099999999000000000000000000000000000000000000000000700a0000600600
+049499990499994000ddc000000cdd00088800000ccc0000055500009999494099999999cc000000cc000000000000cc000000ccd0d0d0d00a00000a06000006
+044999990499994000ddc000000cdd000000000000000000000000009999944099999999000d0000000d0000000d0000000d00000000000000070000000d0000
+044444440499994000ddc000000cdd000000000000000000000000004444444044444444c0000000c00000000000000c0000000cd0d0d0d0000000f000000060
+000000000499994000ddc000000cdd000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a0000000600
 00000000000000000000000006666600066666000666666006666600666666000660660006666600000066606660000066666660000006600000666066000000
 00000000000000000000000066666660666666606666666066666660666666606660666066666660000066606660000066666660000066600000666066600000
 00000000000000000000000066606660666066606660666066000660666066606660066066666660000006606600000006666600000066600000066066600000
@@ -2146,7 +2138,7 @@ __label__
 00000000000000000000000000000000000000000000000000000000000000070000000000000000000000000000000000000000000000000000000000000000
 
 __gff__
-0000050000030303000003000700020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003030000000000030300000000050000858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585850000
+0000050000030303000083000700020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003030000000000030300000000050000858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585850000
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003030000000000000000000000050500000000000000000000000000000003030303000000000000000000000000000303000000000000000000000000000000000000000000000000000000000000000001
 __map__
 3f3f3f3f3f3f3fb0b13f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02020202020202023f3f3f02023f3f3f3f020202020202020202020202020202020202020202020202020202020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -2161,7 +2153,7 @@ a0a1a23f3f3fa6a7a8a9aa8c8c3f3f3f3f3f3f3f3f3f600e03623f3f3f3f3f3f023f3f5051515151
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60070a0a0a0a07623f3f3f3f3f3f3f7449cdce0101010101014b74020202020202020202020202020202020202020202600101ddde010101623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f6007070a0a0707623f3f3f3f3f3f3f7449ddde0101010101014b7402020202020202020202020202020202020202023f604901010101014b623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f7071540a0a5371723f3f3f3f3f3f3f744901010101010101010f74020202020202020202020202020202020202023f0060010101cf010101623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f3f3f60010f623f3f3f3f3f3f3f3f3f717171717171717171717171020202020202020202020202020202020202020002600e01010101010f62003f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f3f3f600a0f623f3f3f3f3f3f3f3f3f717171717171717171717171020202020202020202020202020202020202020002600e01010101010f62003f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f3f3f3f71713f3f3f3f3f3f3f023f3f023f023f3f3f3f0202023f3f3f02020202020202020202020202020202020202027071717171717171723f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f000000000000003f3f3f3f02020202020202020202020202020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb4b53f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f0000000000000000003f3f02020202020202020202020202020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -2218,7 +2210,7 @@ __sfx__
 001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+6b0101012d7502d7502d7502a6502a6502c7502b7502b550297502a55025650277502675021650247501e65021740205401c6401d730196301a53018700156101271012600000000d70000000000000000000000
 000100002e7502e7502e7502e7502d7502d7502d7502c7502b7502a75026750237502375024750267502875028750000000000000000000000000000000000000000000000000000000000000000000000000000
 00100000277502675024750227502175020750207502075020750207502075020750207502c7002f7003370000000000000000000000000000000000000000000000000000000000000000000000000000000000
 000100001c7401b7501b7501b7501b7501c7601d7601e7401f7302072025720297302973000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
