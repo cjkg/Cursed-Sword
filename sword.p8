@@ -31,7 +31,7 @@ function _init()
 	t=0
 	cartdata(cursed_sword)
 
-	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer"],"mob_atk":[1,1,1,2,2,2,2,3,3,4],"mob_hp":[10,1,1,2,3,5,6,7,7,8],"mob_los":[5,4,10,5,5,5,4,4,4,5],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203]],"mob_col":[12,11,6,8,14,11,7,9,9,13],"mob_def":[0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1],"mob_quench":[0,10,10,10,10,10,10,5,5,5],"mob_floor_min":[0,0,3,4,5,6,7,8,9,9,10],"mob_floor_max":[0,3,7,8,9,10,10,11,11,12,12],"mob_spec":["","","","","","","","","","",""],"maxmons":[6,10,14,0,18,20,22,0,22,21,20],"minmons":[3,5,7,0,9,10,11,0,12,13,13,0],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":4},"relic":{"mult":5}},"powergemstypes":["doomsword","shovelsword","skippingstone","vampiretooth","witcheye","cleromancer","chain link","demon heart","quicksilver"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 50%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall"," for 25 ⧗! be careful!"],"price":750},"skippingstone":{"name":"skipping stone","color":8,"desc":[" bump walls to skip"," a turn"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" randomly drain ♥"," equal to your atk!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see your prize!"],"price":500},"chain link":{"name":"chain link","color":8,"desc":["press 🅾️ to strike all","nearby squares for 50⧗"]},"wasp thorax":{"name":"wasp thorax","color":8,"desc":["2x atk, but halves max♥"]},"demon heart":{"name":"demon heart","color":8,"desc":["randomly gain 1 max ♥","when you slay an enemy"]},"quicksilver":{"name":"quicksilver","color":8,"desc":["enemy attacks miss","more often!"]}},"vases":[1,1,1,1,1,1,5,5,7,7,7],"npcs":{},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
+	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer","slab"],"mob_atk":[1,1,1,2,2,2,2,3,3,4,1],"mob_hp":[10,1,1,2,3,5,6,5,3,8,3],"mob_los":[5,4,23,5,5,5,4,4,4,5,2],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203],[218,218,219,219]],"mob_col":[12,11,6,8,14,11,7,9,9,13,14],"mob_def":[0,0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1,0],"mob_quench":[0,10,10,10,10,10,10,5,5,5,20],"mob_floor_min":[0,0,3,4,5,6,7,8,9,9,5],"mob_floor_max":[0,3,7,8,9,10,10,11,11,11,9],"mob_spec":["","","","","","","","","","","",""],"maxmons":[6,10,14,0,18,20,22,0,16,16,16],"minmons":[3,5,7,0,9,10,11,0,10,10,10,0],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":4},"relic":{"mult":5}},"powergemstypes":["doomsword","shovelsword","skippingstone","vampiretooth","witcheye","cleromancer","chain link","demon heart","quicksilver"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 50%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall"," for 25 ⧗! be careful!"],"price":750},"skippingstone":{"name":"skipping stone","color":8,"desc":[" bump walls to skip"," a turn"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" randomly drain ♥"," equal to your atk!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see your prize!"],"price":500},"chain link":{"name":"chain link","color":8,"desc":["press 🅾️ to strike all","nearby squares for 50⧗"]},"wasp thorax":{"name":"wasp thorax","color":8,"desc":["2x atk, but halves max♥"]},"demon heart":{"name":"demon heart","color":8,"desc":["randomly gain 1 max ♥","when you slay an enemy"]},"quicksilver":{"name":"quicksilver","color":8,"desc":["enemy attacks miss","more often!"]}},"vases":[1,1,1,1,1,1,5,5,7,7,7],"npcs":{},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
 	mob_name,mob_atk,mob_hp,mob_los,mob_ani,mob_col,mob_def,mob_int,mob_quench,mob_minf,mob_maxf,mob_spec,minmons,maxmons=_gt.mob_name,_gt.mob_atk,_gt.mob_hp,_gt.mob_los,_gt.mob_ani,_gt.mob_col,_gt.mob_def,_gt.mob_int,_gt.mob_quench,_gt.mob_floor_min,_gt.mob_floor_max,_gt.mob_spec,_gt.minmons,_gt.maxmons
 	gem_types,gem_qual,gem_props,powergemsprops,powergemstypes,vases=_gt.gem_types,_gt.gem_qual,_gt.gems,_gt.powergemsprops,_gt.powergemstypes,_gt.vases
 
@@ -582,7 +582,7 @@ end
 
 
 -->8
---gameplay
+	--gameplay
 
 function moveplayer(dx,dy)
 	local destx,desty=p_mob.x+dx,p_mob.y+dy
@@ -793,7 +793,7 @@ function updatestats()
 				elseif nm=="demon heart" then
 					demon=true
 				elseif nm=="quicksilver" then
-					quick+=10
+					quick+=30
 				end
 			end
 		end
@@ -833,7 +833,6 @@ function updatestats()
 	p_mob.hp=min(p_mob.hp, p_mob.hpmax)
 end
 
---7007
 function treasure(txt,amt,destx,desty,col)
 	local msg
 	--★ ternary?
@@ -882,7 +881,7 @@ function dodig(destx,desty)
 	if thirst>=25 then
 		for i=1,8 do
 			local blastx,blasty=destx+dirx[i],desty+diry[i]
-			if not fget(mget(blastx,blasty),0) then
+			if not fget(mget(blastx,blasty),0) and mget(blastx,blasty)!=14 then
 				mset(blastx,blasty,79)
 			end
 		end
@@ -892,14 +891,14 @@ end
 
 function dochain()
 	if thirst>=50 then
-		for i=1,4 do	
+		for i=1,8 do	
 			local _x,_y=
 				p_mob.x+dirx[i],
 				p_mob.y+diry[i]
 			local m,w=
 				getmob(_x,_y),
 				mget(_x,_y)
-	
+
 			if m then
 				hitmob(p_mob,m)
 			elseif dig and fget(w,7) then
@@ -912,6 +911,52 @@ function dochain()
 		sfx(42)
 	end
 end
+--[[
+function dochain2()
+	if thirst>=50 then
+		local queue={}
+		for i=1,8 do	
+			local _x,_y=
+				p_mob.x+dirx[i],
+				p_mob.y+diry[i]
+			if getmob(_x,_y) then
+				add(queue,getmob(_x,_y))
+			end
+		end
+		
+		for m in all(queue) do
+			hitmob(p_mob,m)
+		end
+		
+		
+		thirst-=50
+		sfx(42)
+	end
+end
+
+function dochain3()
+	if thirst>=50 then
+		local queue={p_mob}
+		for q in all(queue) do
+			for i=1,8 do	
+				local _x,_y=
+					q.x+dirx[i],
+					q.y+diry[i]
+				if getmob(_x,_y) and not isin(queue,getmob(_x,_y)) then
+					add(queue,getmob(_x,_y))
+				end
+			end
+		end
+		del(queue,p_mob)
+		for m in all(queue) do
+			hitmob(p_mob,m)
+		end
+		
+		
+		thirst-=50
+		sfx(42)
+	end
+end]]
 
 function reset_store()
 	mset(6,8,253)
@@ -1264,22 +1309,23 @@ function ai_attac(m)
    m.task=ai_wait
    addfloat("?",mx*8+2,my*8,10)
    sfx(50)
-  else
+  elseif m.n!="slab" then
    local bdst,cand=999,{}
    calcdist(m.tx,m.ty)
    for i=1,4 do
-	local dx,dy=dirx[i],diry[i]
-	local tx,ty=mx+dx,my+dy
-	if iswalkable(tx,ty,"checkmobs") then
-	 local dst=distmap[tx][ty]
-	 if dst<bdst then
-	  cand={}
-	  bdst=dst
-	 end
-	 if dst==bdst then
-	  add(cand,i)
-	 end
-	end
+				local dx,dy=dirx[i],diry[i]
+				local tx,ty=mx+dx,my+dy
+
+				if iswalkable(tx,ty,"checkmobs") then
+				 local dst=distmap[tx][ty]
+				 if dst<bdst then
+				  cand={}
+				  bdst=dst
+				 end
+				 if dst==bdst then
+				  add(cand,i)
+				 end
+				end
    end
    if #cand>0 then
 				local c=getrnd(cand)
@@ -1404,7 +1450,7 @@ function makepowergem()
 	local gem=rnd(powergemstypes)
 	local pg=powergemsprops[gem]
 	del(powergemstypes,gem)
-	debug[1]=gem
+
 	return {
 		name=pg.name,
 		col=pg.color,
@@ -2048,22 +2094,22 @@ __gfx__
 606666046066660406666600066666006666060606660606666666606666666006666660666666666066660066666664f5566600000002000020000008888000
 06666600066666000660660006606600006666660066666606000600000060000066660066666666066666006066660005555500000000200200b00000000000
 66666600666666000060600000606000000666600006666000000000000000000000000000000000666666000666660004000400000002222220b00000000000
-6660660600000000006666000000000000666000006660000066600c0000000000aaa00000000000000000000000000000000000000002222222400000000000
-0666666666606606066666600066660006666600066666000666660c0066600c0a000a0000aaa000000000000000000000000000000022222222700000000000
-0666060606666666666600660660066006606000066060000660000c0666660c0a000a000a000a00000000000000000000000000000022222222400000000000
-00666660066606066660bb06660bb06666666660666666600666060c0660000c90aaa0900a000a00000000000000000000000000000022222220400000000000
-06066666006666606660bb06660bb06606660600066606006666664c0666060c9900099090aaa090000000000000000000000000000072222220400000000000
-000666060606666666660066666006666666660006666600466666000666664c9999999099000990000000000000000000000000000002222222400000000000
-00066600000666060666666006666660066666006666660006666600466666000999990009999900000000000000000000000000000022222222400000000000
-00600600000060000066660000666600066660000666600005000500050005009000009090000090000000000000000000000000000222222222420000000000
-666066066660660600000000000000000066660000666600000000000000000008888888088888888888888088888880c00000000c0c0c000880880000000000
-0666666606666666666066066660660606666660066666600066660000666600880000808800008008000088080000880c0c0000ccccccc08888e88000000000
-066606060666060606666666066666666666006666660066066006600660066080888808808888088088880880888808008000000cacac0088888e8000000000
-006666600066666006660606066606066660bb066660bb06660bb066660bb066088000880880008888000880880008800c0600000ceaec008888888000000000
-060666660606666600666660006666606660bb066660bb06660bb066660bb0668808882b880888bb2b8880882b888088000060000c6e6c000888880000000000
-0006660600066606060666660606666666660066666600666660066666600666808b2b22808b2bbbb2b2b8082bb2b808000006000c666c000088800000000000
-000666000006660000066606000666060666666006666660066666600666666008bbb2bb08b2b22bb2bbbb80bbbb2b800000006000ccc0000008000000000000
-00600600006006000000600000006000006666000066660000666600006666008bb2b2bb82bbbbb2bb222b282bb22bb800000000000000000000000000000000
+6660660600000000006666000000000000666000006660000066600c0000000000aaa00000000000066666600000000000000000000002222222400000000000
+0666666666606606066666600066660006666600066666000666660c0066600c0a000a0000aaa000660660600666666000000000000022222222700000000000
+0666060606666666666600660660066006606000066060000660000c0666660c0a000a000a000a00660660606606606000000000000022222222400000000000
+00666660066606066660bb06660bb06666666660666666600666060c0660000c90aaa0900a000a00666666606606606000000000000022222220400000000000
+06066666006666606660bb06660bb06606660600066606006666664c0666060c9900099090aaa090666666606666666000000000000072222220400000000000
+000666060606666666660066666006666666660006666600466666000666664c9999999099000990666666606666666000000000000002222222400000000000
+00066600000666060666666006666660066666006666660006666600466666000999990009999900666666606666666000000000000022222222400000000000
+00600600000060000066660000666600066660000666600005000500050005009000009090000090660660606606606000000000000222222222420000000000
+000000000000000000000000000000000000000000000000000000000000000008888888088888888888888088888880c00000000c0c0c000880880000000000
+0000000000000000000000000000000000000000000000000000000000000000880000808800008008000088080000880c0c0000ccccccc08888e88000000000
+000000000000000000000000000000000000000000000000000000000000000080888808808888088088880880888808008000000cacac0088888e8000000000
+0000000000000000000000000000000000000000000000000000000000000000088000880880008888000880880008800c0600000ceaec008888888000000000
+00000000000000000000000000000000000000000000000000000000000000008808882b880888bb2b8880882b888088000060000c6e6c000888880000000000
+0000000000000000000000000000000000000000000000000000000000000000808b2b22808b2bbbb2b2b8082bb2b808000006000c666c000088800000000000
+000000000000000000000000000000000000000000000000000000000000000008bbb2bb08b2b22bb2bbbb80bbbb2b800000006000ccc0000008000000000000
+00000000000000000000000000000000000000000000000000000000000000008bb2b2bb82bbbbb2bb222b282bb22bb800000000000000000000000000000000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050000000060606000550550070000000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005050000666666605555655077000000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000500000067676005555565077700000
