@@ -582,7 +582,7 @@ end
 
 
 -->8
-	--gameplay
+--gameplay
 
 function moveplayer(dx,dy)
 	local destx,desty=p_mob.x+dx,p_mob.y+dy
@@ -702,9 +702,8 @@ function hitmob(atkm,defm)
 	--★ refactor
  local col,dmg,defmx,defmy=9,max(0,atkm.atk-defm.def),defm.x,defm.y
  if defm==p_mob then
-		luckshot= 101+quick
 		col=8
-		if flr(rnd(luckshot+luck))>=98 then
+		if flr(rnd(101+quick+luck))>=95 then
 			dmg=0
 			addfloat("lucky!",defmx*8,defmy*8,11)
 		end
@@ -712,7 +711,7 @@ function hitmob(atkm,defm)
 		if clero and flr(rnd(101))+luck>50 then
 			treasure("bonus",1,atkm.x,atkm.y-1,11)
 		end
-		if vampire and flr(rnd(101))+luck>50 then
+		if vampire and flr(rnd(101))+luck>85 then
 			treasure("vamp!","",atkm.x,atkm.y-1,14)
 		end
 	end
@@ -956,7 +955,7 @@ function dochain3()
 		thirst-=50
 		sfx(42)
 	end
-end]]
+end]]	
 
 function reset_store()
 	mset(6,8,253)
@@ -1503,6 +1502,7 @@ function mapgen()
 	--add more clero effects
  --fix the door issue on the top border
  --center floats more, maybe -#txt/2? then do something so that it ensures it doesn't get cut off on righthand side
+ --add crawl
  repeat
   copymap(48,0)
   rooms={}
