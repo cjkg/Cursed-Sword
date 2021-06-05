@@ -27,20 +27,21 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/
 --]]
 
 function _init()
-	
-	t=0
 	cartdata(cursed_sword)
 
-	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer","slab"],"mob_atk":[1,1,1,2,2,2,2,3,3,4,1],"mob_hp":[10,1,1,2,3,5,6,5,3,8,3],"mob_los":[5,4,23,5,5,5,4,4,4,5,2],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203],[218,218,219,219]],"mob_col":[12,11,6,8,14,11,7,9,9,13,14],"mob_def":[0,0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1,0],"mob_quench":[0,10,10,10,10,10,10,5,5,5,20],"mob_floor_min":[0,0,3,4,5,6,7,8,9,9,5],"mob_floor_max":[0,3,7,8,9,10,10,11,11,11,9],"mob_spec":["","","","","","","","","","","",""],"maxmons":[6,10,14,0,18,20,22,0,16,16,16],"minmons":[3,5,7,0,9,10,11,0,10,10,10,0],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":4},"relic":{"mult":5}},"powergemstypes":["doomsword","shovelsword","skippingstone","vampiretooth","witcheye","cleromancer","demon heart","quicksilver","lasersword","wasp thorax"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 50%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall"," for 10⧗! be careful!"],"price":750},"skippingstone":{"name":"skipping stone","color":8,"desc":[" bump walls to skip"," a turn"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" randomly drain ♥"," equal to your atk!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see your prize!"],"price":500},"wasp thorax":{"name":"wasp thorax","color":8,"desc":["3x atk, but drops","your base ♥ to 3"]},"demon heart":{"name":"demon heart","color":8,"desc":["randomly gain 1 max ♥","when you slay an enemy"]},"quicksilver":{"name":"quicksilver","color":8,"desc":["enemy attacks miss","more often!"]},"lasersword":{"name":"laser sword","color":8,"desc":["attack atk+1 squares","in a straight line!"]}},"vases":[1,1,1,1,1,1,5,5,7,7,7],"npcs":{},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
+	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer","slab"],"mob_atk":[1,1,1,2,2,2,2,3,3,4,1],"mob_hp":[10,1,1,2,3,5,6,5,3,8,3],"mob_los":[5,4,23,5,5,5,4,4,4,5,2],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203],[218,218,219,219]],"mob_col":[12,11,6,8,14,11,7,9,9,13,14],"mob_def":[0,0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1,0],"mob_quench":[0,10,10,10,10,10,10,5,5,5,20],"mob_floor_min":[0,0,3,4,5,6,7,8,9,9,5],"mob_floor_max":[0,3,7,8,9,10,10,11,11,11,9],"mob_spec":["","","","","","","","","","","",""],"maxmons":[6,10,14,0,18,20,22,0,16,16,16],"minmons":[3,5,7,0,9,10,11,0,10,10,10,0],"mapani":{"ani1":[73,75,174,232,234],"ani2":[74,76,175,233,235]},"floorlist":[0,4,8,12],"storefloors":[4,8],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":4},"relic":{"mult":5}},"powergemstypes":["doomsword","shovelsword","skippingstone","vampiretooth","witcheye","cleromancer","demon heart","quicksilver","lasersword","wasp thorax"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 50%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall"," for 10⧗! be careful!"],"price":750},"skippingstone":{"name":"skipping stone","color":8,"desc":[" bump walls to skip"," a turn"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" randomly drain ♥"," equal to your atk!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see your prize!"],"price":500},"wasp thorax":{"name":"wasp thorax","color":8,"desc":["3x atk, but drops","your base ♥ to 3"]},"demon heart":{"name":"demon heart","color":8,"desc":["randomly gain 1 max ♥","when you slay an enemy"]},"quicksilver":{"name":"quicksilver","color":8,"desc":["enemy attacks miss","more often!"]},"lasersword":{"name":"laser sword","color":8,"desc":["attack atk+1 squares","in a straight line!"]}},"vases":[1,1,1,1,1,1,5,5,7,7,7],"clerotype":["♥","⧗"],"npcs":{"alchemist":{"tiles":[205,206,221,222],"dialogue":[""," that sword slew me too,"," but my soul was hidden"," elsewhere. i worry not,"," i am mightier reborn.",""]},"oldman":{"tiles":[204],"dialogue":[""," i am the last of my order."," the rest were slain long"," ago, by that very sword"," you wield.",""]},"tablet1":{"tiles":[11],"dialogue":[""," the cursed sword in your"," hand cannot be sheathed."," can you cast it back from"," whence it came, or will"," its curse claim you too?",""]}},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
 	mob_name,mob_atk,mob_hp,mob_los,mob_ani,mob_col,mob_def,mob_int,mob_quench,mob_minf,mob_maxf,mob_spec,minmons,maxmons=_gt.mob_name,_gt.mob_atk,_gt.mob_hp,_gt.mob_los,_gt.mob_ani,_gt.mob_col,_gt.mob_def,_gt.mob_int,_gt.mob_quench,_gt.mob_floor_min,_gt.mob_floor_max,_gt.mob_spec,_gt.minmons,_gt.maxmons
 	gem_types,gem_qual,gem_props,powergemsprops,powergemstypes,vases=_gt.gem_types,_gt.gem_qual,_gt.gems,_gt.powergemsprops,_gt.powergemstypes,_gt.vases
 
 	tools=_gt.tools
-
-	dpal,dirx,diry=tools.dpal,tools.dirx,tools.diry
-	crv_sig,crv_msk,wall_sig,wall_msk=tools.carve_signatures,tools.carve_masks,tools.wall_sig,tools.wall_msk
-
+	dpal,dirx,diry,crv_sig,crv_msk,wall_sig,wall_msk=tools.dpal,tools.dirx,tools.diry,tools.carve_signatures,tools.carve_masks,tools.wall_sig,tools.wall_msk
+	mapanitable,npcs,floorlist,storefloors=_gt.mapani,_gt.npcs,_gt.floorlist,_gt.storefloors
+	
 	debug={}
+	
+	t,tani,fadeperc,buttonbuff,mob,dmob,p_mob,p_t,timer,kills,thirst,turn,atkbonus,clerotype,inv,eqp,wind,float=0,0,0,-1,{},{},addmob(1,-100,-100),0,0,0,250,0,0,_gt.clerotype,{},{},{},{},{}
+
+
 	startgame()
 end
 
@@ -66,22 +67,7 @@ function _draw()
 end
 
 function startgame()
-	tani,fadeperc,buttonbuff=0,0,-1
-
-	skipai,win=false,false
-
-	mob,dmob={},{}
-	p_mob=addmob(1,-100,-100)
-
-	p_t=0
-	
-	timer,kills,thirst,turn,atkbonus=0,0,250,0,0
-	clerotype={"♥","⧗"}
-	inv,eqp,wind,float={},{},{},{},{}
-	
-	hpwind=addwind(5,5,80,13,{})
-
-	_upd,_drw=update_game,draw_game
+	hpwind,_upd,_drw=addwind(5,5,80,13,{}),update_game,draw_game
 	genfloor(0)
 end
 -->8
@@ -160,10 +146,9 @@ function update_pturn()
 		if checkend() and not skipai then
 			do_ai()
 			turn+=1
-			--★ put floor list in json
-			if thirst>0 and not isin(floor,{0,4,8,12}) then
+			if thirst>0 and not isin(floor,floorlist) then
 				thirst-=1
-			elseif thirst==0 and not isin(floor,{0,4,8,12}) then
+			elseif thirst==0 and not isin(floor,floorlist) then
 				showmsg("your sword feasts on you!",120)					
 				p_mob.hp-=1
 			end
@@ -200,7 +185,7 @@ function getbutton()
 			return i
 		end
 	end
-	return -1 --imaginary button
+	return -1
 end
 
 function dobutton(button)
@@ -290,10 +275,9 @@ function animap()
 	for x=0,15 do
 		for y=0,15 do
 			local tle=mget(x,y)
-				--★
-			if isin(tle,{73,75,174,232,234}) then
+			if isin(tle,mapanitable.ani1) then
 				tle+=1
-			elseif isin(tle,{74,76,175,233,235}) then
+			elseif isin(tle,mapanitable.ani2) then
 				tle-=1
 			end
 		mset(x,y,tle)
@@ -315,7 +299,6 @@ function _drawspr(_spr,_x,_y,_c,_flip)
 end
 
 function rectfill2(_x,_y,_w,_h,_c)
-	--★
 	rectfill(_x,_y,_x+max(_w-1,0),_y+max(_h-1,0),_c)
 end
 
@@ -357,8 +340,7 @@ function wait(_wait)
 end
 
 function fadeout(spd,_wait)
-	--★ might save some tokens getting ready of these safety valves
- if (spd==nil) spd=0.04
+	if (spd==nil) spd=0.04
  if (_wait==nil) _wait=0
  repeat
   fadeperc=min(fadeperc+spd,1)
@@ -457,8 +439,9 @@ end
 
 function los(x1,y1,x2,y2)
  local frst,sx,sy,dx,dy=true
- --★
+ 
  if dist(x1,y1,x2,y2)==1 then return true end
+ 
  if x1<x2 then
   sx,dx=1,x2-x1
  else
@@ -469,6 +452,7 @@ function los(x1,y1,x2,y2)
  else
   sy,dy=-1,y1-y2
  end
+ 
  local err,e2=dx-dy
 
  while not(x1==x2 and y1==y2) do
@@ -542,11 +526,6 @@ function calcdist(tx,ty)
  until #cand==0
 end
 
-function getrnd(arr)
-	return arr[1+flr(rnd(#arr))]
-end
-
---★ combine these two into dual return if never used separately to save 4 tokens
 function centx(w)
 	return 65-((w+2)*4+7)/2
 end
@@ -621,7 +600,6 @@ end
 function trig_bump(tle,destx,desty)
 	if tle==12 then
 		sfx(62)
-		--★ pretty walls take 17 tokens
 		local tleabove=1
 		if fget(mget(destx,desty-1),7) or desty-1<0 then
 			tleabove=3
@@ -632,18 +610,13 @@ function trig_bump(tle,destx,desty)
 		local amt=ceil((floor+1)/3)+flr(rnd(luck))
 		treasure("♥",amt,destx,desty,8)
 		mset(destx,desty,78)
-	--[[elseif tle==6 then
-		sfx(61)
-		local amt=5*flr(ceil((floor+1)/2)+rnd(luck+3))
-		treasure("◆",amt,destx,desty,9)
-		mset(destx,desty,79)]]
-	elseif isin(floor,{4,8}) and tle==236 then
+	elseif isin(floor,storefloors) and tle==236 then
 		treasure("atk+1","",destx,desty,10)
 		reset_store()
-	elseif isin(floor,{4,8}) and tle==237 then
+	elseif isin(floor,storefloors) and tle==237 then
 		treasure("def+1","",destx,desty,10)
 		reset_store()
-	elseif isin(floor,{4,8}) and tle==238 then
+	elseif isin(floor,storefloors) and tle==238 then
 		treasure("max♥+10","",destx,desty,10)
 		reset_store()
 	elseif isin(tle,{174,175}) then
@@ -653,10 +626,12 @@ function trig_bump(tle,destx,desty)
 		mset(destx,desty,78)
 	elseif tle==10 then
 		treasure("●","",destx,desty,11)		
-	elseif tle==204 then
-		showtalk({""," i'm the last of my order.", " the rest were slain long", " ago, by that very sword", " you wield.",""}) 
-	elseif isin(tle,{205,206,221,222})	then
-		showtalk({""," that sword slew me too,"," but my soul was hidden", " elsewhere. i worry not,"," i am mightier reborn.",""})
+	elseif isin(tle,npcs.oldman.tiles) then
+		showtalk(npcs.oldman.dialogue) 
+	elseif isin(tle,npcs.alchemist.tiles)	then
+		showtalk(npcs.alchemist.dialogue)
+	elseif isin(tle,npcs.tablet1.tiles) and floor==0 then
+		showtalk(npcs.tablet1.dialogue)
 	end
 	return
 end
@@ -667,7 +642,7 @@ function trig_step()
   sfx(46)
   genfloor(floor+1)
   floormsg()
-  return true --trigger something just in case
+  return true
  end
  return false
 end
@@ -748,9 +723,6 @@ function checkend()
 		_upd=update_gameover
 		_drw=draw_gameover
 		fadeout(0.02)
-		--★
-		--might not need this: maybe for narrative levels?
-		--reload(0x2000,0x2000,0x1000)
 		return false
 	elseif p_mob.hp<=0 then
 		wind={}
@@ -761,8 +733,6 @@ function checkend()
 		_drw=draw_gameover
 		fadeout(0.02)
 		sfx(44)
-		--★
-		--reload(0x2000,0x2000,0x1000)
 		return false
 	end
 		return true
@@ -771,7 +741,7 @@ end
 function updatestats()
 	quick,timer,dig,xray,clero,skipper,vampire,demon=0,0
 	local atk,def,hpmax,lck=1+atkbonus,1,p_mob.basehpmax,0
-	--bool/mult loop
+	
 	for i=1,3 do
 		if eqp[i] then
 			local m=eqp[i]
@@ -803,7 +773,6 @@ function updatestats()
 		end
 	end	
 	
-	--addition loop
 	for i=1,3 do
 		local m=eqp[i]
 		if m then
@@ -1004,8 +973,7 @@ function dofloats()
 end
 
 function dohpwind()
-	--★ could save 10 tokens by getting rid of the fancy bit
- hpwind.txt[1]=" ♥"..sub('0'..p_mob.hp,-2).."/"..sub('0'..p_mob.hpmax,-2).."  ⧗"..sub("000"..thirst,-3)--.."  ◆"..sub("000"..gold,-3)
+	hpwind.txt[1]=" ♥"..sub('0'..p_mob.hp,-2).."/"..sub('0'..p_mob.hpmax,-2).."  ⧗"..sub("000"..thirst,-3)--.."  ◆"..sub("000"..gold,-3)
 
  local hpy=0
  if p_mob.y<8 then
@@ -1052,14 +1020,10 @@ function showinv()
 	curwind=invwind
 	end
 
-
---★ parent child table
 function showuse()
 	local txt,itm={}
-	--★how to handle empty slots. depends on type, i think
 	if invwind.cur<4 and eqp[invwind.cur] then
 		add(txt,"remove")
-		--★need to either build an exchange or trash
 		itm=eqp[i]
 	elseif invwind.cur>4 and inv[invwind.cur-4] then
 		add(txt,"equip")
@@ -1074,27 +1038,7 @@ function showuse()
 	usewind.cur=1
 	curwind=usewind
 end
---[[
-function showstore()
-	local txt={"buy gem: 300◆"}
-	_upd=update_store
-	storewind=addwind(28,80,80,13,txt)
-	storewind.cur=1
-	curwind=storewind	
-end
 
-function trigbuy(i)
-	--local i=storewind.txt[storewind.cur],storewind.cur	
-	if freeslot(inv,6)>0 then
-		inv[freeslot(inv,6)]=makepowergem()
-		sfx(52)
-	else
-		sfx(51)
-		--★full!
-		--★not enough gold!
-	end
-end
-]]
 function triguse()
 	local verb,i,after=usewind.txt[usewind.cur],invwind.cur,"back"
 	local itm=i<4 and eqp[i] or inv[i-4]
@@ -1120,20 +1064,14 @@ function triguse()
 			sfx(51)
 		end
 	end
-	--?
 
 	updatestats()
---	if after=="back" then
 	usewind.dur=0
  del(wind,invwind)
  del(wind,statwind)
  del(wind,infowind)
  showinv()
  invwind.cur=i
---elseif after=="game" then
---		usewind.dur,invwind.dur,statwind,infowind=0,0,0,0
---		_upd=update_game
---	end
 end
 
 function floormsg()
@@ -1161,7 +1099,7 @@ function addmob(typ,mx,my)
 		quench=mob_quench[typ],
 		col=mob_col[typ],
 		los=mob_los[typ],
-		int=mob_int[typ],--could go, if tokens needed, but i doubt it
+		int=mob_int[typ],
 		x=mx,
 		y=my,
 		task=ai_wait}
@@ -1176,7 +1114,7 @@ function mobwalk(mb,dx,dy)
 
 		mobflip(mb,dx)
 		mb.sox,mb.soy=-dx*8,-dy*8
-		mb.ox,mb.oy=mb.sox,mb.soy --set the offset to the starting value, prevents stutter
+		mb.ox,mb.oy=mb.sox,mb.soy 
 
 		mb.mov=mov_walk
 end
@@ -1221,10 +1159,7 @@ end
 
 function ai_wait(m)
  if cansee(m,p_mob) then
-  --aggro
-  --★combine variables
-  m.task=ai_attac
-  m.tx,m.ty=p_mob.x,p_mob.y
+  m.task,m.tx,m.ty=ai_attac,p_mob.x,p_mob.y
   addfloat("!",m.x*8+2,m.y*8,10)
   sfx(55)
   return true
@@ -1233,29 +1168,20 @@ function ai_wait(m)
 end
 
 function ai_attac(m)
-	--★cut 2 tokens here, go to sword11 for old function
 	local px,py,mx,my=p_mob.x,p_mob.y,m.x,m.y
  if dist(m.x,m.y,px,py)==1 then
-  --attack player
   local dx,dy=px-mx,py-my
   mobbump(m,dx,dy)
-  -- if m.spec=="placeholder" and m.charge>0then
-  	--function(p_mob)
- -- 	m.charge-=1
- -- else
   	
  	hitmob(m,p_mob)
- --	end
   sfx(58)
 		return true
  else
-  --move to player
   if cansee(m,p_mob) then
    m.tx,m.ty=px,py
   end
 
   if mx==m.tx and my==m.ty then
-   --de aggro
    m.task=ai_wait
    addfloat("?",mx*8+2,my*8,10)
    sfx(50)
@@ -1278,7 +1204,7 @@ function ai_attac(m)
 				end
    end
    if #cand>0 then
-				local c=getrnd(cand)
+				local c=rnd(cand)
 				mobwalk(m,dirx[c],diry[c])
 				return true
    end
@@ -1314,7 +1240,7 @@ function spawnmobs()
  end
  
  repeat
-  local r=getrnd(rpot)
+  local r=rnd(rpot)
   placed+=infestroom(r)
   del(rpot,r)
  until #rpot==0 or placed>maxmons[floor]
@@ -1325,7 +1251,7 @@ function spawnmobs()
    repeat
     x,y=flr(rnd(16)),flr(rnd(16))
    until iswalkable(x,y,"checkmobs")
-   addmob(getrnd(mobpool),x,y)
+   addmob(rnd(mobpool),x,y)
    placed+=1
   until placed>=minmons[floor]
  end
@@ -1339,12 +1265,12 @@ function infestroom(r)
   repeat
    x=r.x+flr(rnd(r.w))
    y=r.y+flr(rnd(r.h))
-  until iswalkable(x,y,"checkmobs") and (mget(x,y)==1 or mget(x,y)==3)
-  addmob(getrnd(mobpool),x,y)
+  until iswalkable(x,y,"checkmobs") and (isin(mget(x,y),{1,3}))
+  addmob(rnd(mobpool),x,y)
  end
  return target
 end
------------------------------
+
 --items
 
 function makegem()
@@ -1433,7 +1359,7 @@ function genfloor(f)
 	fog=blankmap(0)
 	if floor==0 then
 		copymap(16,0)
-	elseif floor==4 or floor==8 then
+	elseif isin(floor,storefloors) then
 		copymap(64,0)
 	elseif floor==12 then
 		copymap(32,0)
@@ -1454,9 +1380,6 @@ function mapgen()
   mazeworm() 
   placeflags()
   carvedoors()
-  --[[if #flaglib>1 then
-   debug[1]="reconnected area"
-  end]]
  until #flaglib==1
  
  carvescuts()
@@ -1476,9 +1399,8 @@ end
 ----------------
 
 function genrooms()
- -- tweak dis
- local fmax,rmax=5,4 --5,4?
- local mw,mh=6,6     --5,5?
+ local fmax,rmax=5,4
+ local mw,mh=6,6
  
  repeat
   --todo: 1st room bigger?
@@ -1500,7 +1422,6 @@ end
 
 
 function rndroom(mw,mh)
- --clamp max area
  local _w=3+flr(rnd(mw-2))
  mh=mid(35/_w,3,mh)
  local _h=3+flr(rnd(mh-2))
@@ -1525,7 +1446,7 @@ function placeroom(r)
  
  if #cand==0 then return false end
  
- c=getrnd(cand)
+ c=rnd(cand)
  r.x=c.x
  r.y=c.y
  add(rooms,r) 
@@ -1566,7 +1487,7 @@ function mazeworm()
   end
  
   if #cand>0 then
-   local c=getrnd(cand)
+   local c=rnd(cand)
    digworm(c.x,c.y)
   end
  until #cand<=1
@@ -1588,7 +1509,7 @@ function digworm(x,y)
    if #cand==0 then
     dr=8
    else
-    dr=getrnd(cand)
+    dr=rnd(cand)
    end
   end
   x+=dirx[dr]
@@ -1692,8 +1613,8 @@ function carvedoors()
   end
   
   if #drs>0 then
-   local d=getrnd(drs)
-   --★
+   local d=rnd(drs)
+ 
    add(doors,d)
    mset(d.x,d.y,1)
    growflag(d.x,d.y,d.f1)
@@ -1727,7 +1648,7 @@ function carvescuts()
   end
   
   if #drs>0 then
-   local d=getrnd(drs)
+   local d=rnd(drs)
    add(doors,d)
    mset(d.x,d.y,1)
    cut+=1
@@ -1742,7 +1663,6 @@ function fillends()
   for _x=0,15 do
    for _y=0,15 do
     tle=mget(_x,_y)
-    --★
     if cancarve(_x,_y,true) and tle!=14 and tle!=15 then
      filled=true
      mset(_x,_y,2)
@@ -1793,7 +1713,6 @@ function startend()
   px,py=flr(rnd(16)),flr(rnd(16))
  until iswalkable(px,py)
  calcdist(px,py)
- --★ callback function
  for x=0,15 do
   for y=0,15 do
    local tmp=distmap[x][y]
@@ -1822,7 +1741,7 @@ function startend()
    end
   end
  end  
- --★
+
  mset(px,py,15)
  p_mob.x=px
  p_mob.y=py
@@ -1862,18 +1781,14 @@ end
 
 
 function decorooms()
-	--★ just stick them in this function?
- local funcs,func,placemax,curr={
-   --deco_dirt,
-   deco_torch,
-   --deco_carpet,
-  -- deco_farn,
+	local funcs,func,placemax,curr={
+  deco_torch,
   deco_vase
   },decovase,6
  
  for r in all(rooms) do
  	
-  func=getrnd(funcs)
+  func=rnd(funcs)
   
   for x=0,r.w-1 do
    for y=r.h-1,1,-1 do
@@ -1895,20 +1810,13 @@ function deco_torch(r,tx,ty,x,y)
   end
  end
 end
---[[
-function deco_carpet(r,tx,ty,x,y)
- deco_torch(r,tx,ty,x,y)
- if x>0 and y>0 and x<r.w-1 and y<r.h-1 then
-  mset(tx,ty,68)
- end
-end
-]]
+
 function deco_vase(r,tx,ty,x,y)
  if iswalkable(tx,ty,"checkmobs") and 
     not next2tile(tx,ty,12) and
     not bcomp(getsig(tx,ty),0,0b00001111) then
     
-  mset(tx,ty,getrnd(vases))
+  mset(tx,ty,rnd(vases))
  end
 end
 
@@ -1919,7 +1827,7 @@ function spawnchests()
   add(rpot,r)
  end
  
- local r=getrnd(rpot)
+ local r=rnd(rpot)
  placechest(r)
 end
 
@@ -1932,13 +1840,13 @@ function placechest(r)
 	 mset(x,y,10)
 end
 __gfx__
-000000000000000000000000660606606606066000aaa00000aaa00000aaa000d0d0d07770d0d0d000000000000000000cccccc0000000000000000000000000
-00000000000000000000000000000000000000000a000a000a000a000a000a00000007777700000000aaaa0000000000c0c00c0c00000000cc00000055000000
-00700700000000000000000060666060606660660a000a000a000a000a000a00d0d077070770d0d0aa0000aa0000000000c00c0000000000cc0cc00055055000
-000770000000000000000000000000000000000090aaa09090aaa09090aaa0900000700700700000a000000a00000000c000000c00000000cc0cc0c055055050
-0007700000000000000000000000000066660660990009909900099099000990d0d077707770d0d0a000000a000000000c0aa0c000000000cc0cc0c055055050
-007007000000000000000000000000000000000099999990999999909999999000000777770000000aa99aa000000000cc0aa0cc00000000000cc0c000055050
-000000000000d000000000000000d00066066666099999000999990009999900d0d0d07770d0d0d000000000000000000c0000c000000000000000c000000050
+000000000000000000000000660606606606066000aaa00000aaa00000aaa000d0d0d07770d0d0d0000000000ccccc000cccccc0000000000000000000000000
+00000000000000000000000000000000000000000a000a000a000a000a000a00000007777700000000aaaa00ccc0ccc0c0c00c0c00000000cc00000055000000
+00700700000000000000000060666060606660660a000a000a000a000a000a00d0d077070770d0d0aa0000aacc0000c000c00c0000000000cc0cc00055055000
+000770000000000000000000000000000000000090aaa09090aaa09090aaa0900000700700700000a000000accc0ccc0c000000c00000000cc0cc0c055055050
+0007700000000000000000000000000066660660990009909900099099000990d0d077707770d0d0a000000ac0000cc00c0aa0c000000000cc0cc0c055055050
+007007000000000000000000000000000000000099999990999999909999999000000777770000000aa99aa0ccc0ccc0cc0aa0cc00000000000cc0c000055050
+000000000000d000000000000000d00066066666099999000999990009999900d0d0d07770d0d0d000000000ccccccc00c0000c000000000000000c000000050
 00000000000000000000000000000000000000000099900000999000009990000000007770000000aaaaaaaa00000000cc0cc0cc000000000000000000000000
 08800080000000000000000000000000800008888800000000000000000088800cc000c0000000000000000000c0c000000000c0c0c000000000000000000000
 08880808800000000000000000000000080088880080000000000000000000800ccc0c0cc0000000000000000c0c0c0c0c000c0ccc0c00000000000000000000
@@ -2190,7 +2098,7 @@ __label__
 00000000000000000000000000000000000000000000000000000000000000070000000000000000000000000000000000000000000000000000000000000000
 
 __gff__
-0000050000030303000003000700020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003030000000000030300000000050000858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585850000
+0000050000030303000003030700020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003030000000000030300000000050000858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585850000
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003030000000000000000000000050500000000000000000000000000000003030303000000000000000003030000000303000000000000000000000000000303030000000000000000000000000003030301
 __map__
 3f3f3f3f3f3f3fb0b13f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02020202020202023f3f3f02023f3f023f020202020202020202020202020202020202020202020202020202020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -2200,7 +2108,7 @@ a0a1a23f3f3fa6a7a8a9aa8c8c3f3f3f3f3f3f3f3f3f600e03623f3f3f3f3f3f023f3f5051515151
 3f3f3f3f3f3fb6b7b8b93f8c3f3f3f3f3f3f3f3f50516442436351523f3f3f3f3f3f3f604d4d4d4d08094d4d4d4d620202020202020202020202020202020202020000003f3f3f3f3f3f3f3f3f020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60030301cc0303623f3f3f3f023f3f604d4d4dbae8eabd4d4d4d620202020202020202020202020202020202020202023f3f3f3f3f3f3f3f3f3f0202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60010101010101623f3f3f3f023f3f604d4d4dbbaeafbc4d4d4d62020202020202020202020202020202020202020202505151515151515152020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f6049010a01014b623f3f3f3f023f3f604d4d4dbbafaebc4d4d4d620202020202020202020202020202020202020202026003030303030303623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60490a01010b4b623f3f3f3f023f3f604d4d4dbbafaebc4d4d4d620202020202020202020202020202020202020202026003030303030303623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60010101010101623f3f3f3f3f3f3f604d4d4dbbaeafbc4d4d4d620202020202020202020202020202020202020202026049edcdce01ee4b623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60070101010107623f3f3f3f3f3f3f744901010101010101014b74020202020202020202020202020202020202020202600101ddde010101623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60070701010707623f3f3f3f3f3f3f744901010101010101014b7402020202020202020202020202020202020202023f604901010101014b623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
