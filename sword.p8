@@ -17,7 +17,7 @@ the json parser program was designed by tylerneylon, adapted by feneric, which
 tylerneylon has released into the public domain. feneric's adaptation of it is 
 released under the gpl v3 license: https://www.gnu.org/licenses/gpl-3.0.en.html.
 
-enemy artwork licensed from oryx design labs, www.oryxdesignlab.com. 
+some enemy artwork licensed from oryx design labs, www.oryxdesignlab.com. 
 (tiles 192-203,208-213,224-31)
 
 this game is released under the cc by-nc-sa 4.0 license, except for the above-
@@ -31,7 +31,7 @@ function _init()
 	t=0
 	cartdata(cursed_sword)
 
-	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer","slab"],"mob_atk":[1,1,1,2,2,2,2,3,3,4,1],"mob_hp":[10,1,1,2,3,5,6,5,3,8,3],"mob_los":[5,4,23,5,5,5,4,4,4,5,2],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203],[218,218,219,219]],"mob_col":[12,11,6,8,14,11,7,9,9,13,14],"mob_def":[0,0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1,0],"mob_quench":[0,10,10,10,10,10,10,5,5,5,20],"mob_floor_min":[0,0,3,4,5,6,7,8,9,9,5],"mob_floor_max":[0,3,7,8,9,10,10,11,11,11,9],"mob_spec":["","","","","","","","","","","",""],"maxmons":[6,10,14,0,18,20,22,0,16,16,16],"minmons":[3,5,7,0,9,10,11,0,10,10,10,0],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":4},"relic":{"mult":5}},"powergemstypes":["doomsword","shovelsword","skippingstone","vampiretooth","witcheye","cleromancer","chain link","demon heart","quicksilver","lasersword"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 50%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall"," for 25 ⧗! be careful!"],"price":750},"skippingstone":{"name":"skipping stone","color":8,"desc":[" bump walls to skip"," a turn"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" randomly drain ♥"," equal to your atk!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see your prize!"],"price":500},"chain link":{"name":"chain link","color":8,"desc":["press 🅾️ to strike all","nearby squares for 50⧗"]},"wasp thorax":{"name":"wasp thorax","color":8,"desc":["2x atk, but halves max♥"]},"demon heart":{"name":"demon heart","color":8,"desc":["randomly gain 1 max ♥","when you slay an enemy"]},"quicksilver":{"name":"quicksilver","color":8,"desc":["enemy attacks miss","more often!"]},"lasersword":{"name":"laser sword","color":8,"desc":["attack atk+1 squares","in a straight line!"]}},"vases":[1,1,1,1,1,1,5,5,7,7,7],"npcs":{},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
+	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer","slab"],"mob_atk":[1,1,1,2,2,2,2,3,3,4,1],"mob_hp":[10,1,1,2,3,5,6,5,3,8,3],"mob_los":[5,4,23,5,5,5,4,4,4,5,2],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203],[218,218,219,219]],"mob_col":[12,11,6,8,14,11,7,9,9,13,14],"mob_def":[0,0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1,0],"mob_quench":[0,10,10,10,10,10,10,5,5,5,20],"mob_floor_min":[0,0,3,4,5,6,7,8,9,9,5],"mob_floor_max":[0,3,7,8,9,10,10,11,11,11,9],"mob_spec":["","","","","","","","","","","",""],"maxmons":[6,10,14,0,18,20,22,0,16,16,16],"minmons":[3,5,7,0,9,10,11,0,10,10,10,0],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":4},"relic":{"mult":5}},"powergemstypes":["doomsword","shovelsword","skippingstone","vampiretooth","witcheye","cleromancer","demon heart","quicksilver","lasersword","wasp thorax"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 50%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall"," for 10⧗! be careful!"],"price":750},"skippingstone":{"name":"skipping stone","color":8,"desc":[" bump walls to skip"," a turn"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" randomly drain ♥"," equal to your atk!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see your prize!"],"price":500},"wasp thorax":{"name":"wasp thorax","color":8,"desc":["3x atk, but drops","your base ♥ to 3"]},"demon heart":{"name":"demon heart","color":8,"desc":["randomly gain 1 max ♥","when you slay an enemy"]},"quicksilver":{"name":"quicksilver","color":8,"desc":["enemy attacks miss","more often!"]},"lasersword":{"name":"laser sword","color":8,"desc":["attack atk+1 squares","in a straight line!"]}},"vases":[1,1,1,1,1,1,5,5,7,7,7],"npcs":{},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
 	mob_name,mob_atk,mob_hp,mob_los,mob_ani,mob_col,mob_def,mob_int,mob_quench,mob_minf,mob_maxf,mob_spec,minmons,maxmons=_gt.mob_name,_gt.mob_atk,_gt.mob_hp,_gt.mob_los,_gt.mob_ani,_gt.mob_col,_gt.mob_def,_gt.mob_int,_gt.mob_quench,_gt.mob_floor_min,_gt.mob_floor_max,_gt.mob_spec,_gt.minmons,_gt.maxmons
 	gem_types,gem_qual,gem_props,powergemsprops,powergemstypes,vases=_gt.gem_types,_gt.gem_qual,_gt.gems,_gt.powergemsprops,_gt.powergemstypes,_gt.vases
 
@@ -72,7 +72,6 @@ function startgame()
 
 	mob,dmob={},{}
 	p_mob=addmob(1,-100,-100)
-	--★
 
 	p_t=0
 	
@@ -84,7 +83,6 @@ function startgame()
 
 	_upd,_drw=update_game,draw_game
 	genfloor(0)
-	
 end
 -->8
 --updates
@@ -210,8 +208,6 @@ function dobutton(button)
 		moveplayer(dirx[button+1],diry[button+1])
 	elseif button==5 then
 		showinv()
-	elseif button==4 and chain then
-		dochain()
 	end
 end
 
@@ -610,10 +606,10 @@ function moveplayer(dx,dy)
 		else
 			if fget(tle,1) then
 				trig_bump(tle,destx,desty)
-			elseif dig and fget(tle,7) then
+			elseif thirst>=10 and dig and fget(tle,7) then
 					dodig(destx,desty)	
 					sfx(47)
-					thirst=max(thirst-25,0)
+					thirst-=10
 			else
 				skipai=true
 			end
@@ -627,7 +623,7 @@ function trig_bump(tle,destx,desty)
 		sfx(62)
 		--★ pretty walls take 17 tokens
 		local tleabove=1
-		if fget(mget(destx,desty-1),7) then
+		if fget(mget(destx,desty-1),7) or desty-1<0 then
 			tleabove=3
 		end
 		mset(destx,desty,tleabove)
@@ -773,10 +769,9 @@ function checkend()
 end
 
 function updatestats()
-	--★ cut the falses somehow?
-	quick,timer,dig,xray,clero,skipper,chain,vampire,demon=0,0
+	quick,timer,dig,xray,clero,skipper,vampire,demon=0,0
 	local atk,def,hpmax,lck=1+atkbonus,1,p_mob.basehpmax,0
-	--bool loop
+	--bool/mult loop
 	for i=1,3 do
 		if eqp[i] then
 			local m=eqp[i]
@@ -790,8 +785,6 @@ function updatestats()
 					clero=true
 				elseif nm=="skipping stone" then
 					skipper=true
-				elseif nm=="chain link" then
-					chain=true
 				elseif nm=="vampire tooth" then
 					vampire=true
 				elseif nm=="demon heart" then
@@ -800,24 +793,15 @@ function updatestats()
 					quick+=30
 				elseif nm=="laser sword" then
 					laser=true
+				elseif nm=="wasp thorax" then
+					atk*=3
+					hpmax=3
+				elseif nm=="doomshock" and (p_mob.hp/p_mob.hpmax)<0.5 then
+				atk*=2
 				end
 			end
 		end
-	end
-
-	--multiplier loop
-	for i=1,3 do
-		local m=eqp[i]
-		if m then
-			if m.name=="doomshock" and (p_mob.hp/p_mob.hpmax)<0.5 then
-				atk*=2
-			elseif m.name=="wasp thorax" then
-				hpmax=ceil(p_mob.hpmax/2)
-				atk*=2
-			end
-		end
-	end
-	
+	end	
 	
 	--addition loop
 	for i=1,3 do
@@ -841,7 +825,6 @@ end
 
 function treasure(txt,amt,destx,desty,col)
 	local msg
-	--★ ternary?
 	if txt=="bonus" then
 		 txt=rnd(clerotype)
 		 msg="bonus"..txt.."!"
@@ -858,7 +841,6 @@ function treasure(txt,amt,destx,desty,col)
 			sfx(61)
 			if floor==0 then
 				msg="press ❎ and equip!"
-				destx=3
 			end
 		else
 			msg="full!"
@@ -884,85 +866,15 @@ function treasure(txt,amt,destx,desty,col)
 end
 
 function dodig(destx,desty)
-	if thirst>=25 then
-		for i=1,8 do
-			local blastx,blasty=destx+dirx[i],desty+diry[i]
-			if not fget(mget(blastx,blasty),0) and mget(blastx,blasty)!=14 then
-				mset(blastx,blasty,79)
-			end
+	for i=1,8 do
+		local blastx,blasty=destx+dirx[i],desty+diry[i]
+		if not fget(mget(blastx,blasty),0) and mget(blastx,blasty)!=14 then
+			mset(blastx,blasty,79)
 		end
-		mset(destx,desty,79)
 	end
+	mset(destx,desty,79)
 end
 
-function dochain()
-	if thirst>=50 then
-		for i=1,8 do	
-			local _x,_y=
-				p_mob.x+dirx[i],
-				p_mob.y+diry[i]
-			local m,w=
-				getmob(_x,_y),
-				mget(_x,_y)
-
-			if m then
-				hitmob(p_mob,m)
-			elseif dig and fget(w,7) then
-				dodig(_x,_y)
-			elseif isin(w,{5,6,7}) then
-				trig_bump(w,_x,_y)
-			end
-		end
-		thirst-=50
-		sfx(42)
-	end
-end
---[[
-function dochain2()
-	if thirst>=50 then
-		local queue={}
-		for i=1,8 do	
-			local _x,_y=
-				p_mob.x+dirx[i],
-				p_mob.y+diry[i]
-			if getmob(_x,_y) then
-				add(queue,getmob(_x,_y))
-			end
-		end
-		
-		for m in all(queue) do
-			hitmob(p_mob,m)
-		end
-		
-		
-		thirst-=50
-		sfx(42)
-	end
-end
-
-function dochain3()
-	if thirst>=50 then
-		local queue={p_mob}
-		for q in all(queue) do
-			for i=1,8 do	
-				local _x,_y=
-					q.x+dirx[i],
-					q.y+diry[i]
-				if getmob(_x,_y) and not isin(queue,getmob(_x,_y)) then
-					add(queue,getmob(_x,_y))
-				end
-			end
-		end
-		del(queue,p_mob)
-		for m in all(queue) do
-			hitmob(p_mob,m)
-		end
-		
-		
-		thirst-=50
-		sfx(42)
-	end
-end]]	
 function do_laser(destx,desty)
 
 	local _x,_y,_px,_py=destx,desty,p_mob.x,p_mob.y
@@ -1072,14 +984,20 @@ function showtalk(txt)
 end
 
 function addfloat(_txt,_x,_y,_c)
+	_x=mid(0,_x-(#_txt*4)/2+5,128-(#_txt*4+4))
 	add(float,{txt=_txt,x=_x,y=_y,c=_c,ty=_y-10,dur=70})
 end
 
 function dofloats()
 	for f in all(float) do
-		f.y+=(f.ty-f.y)/10
-		f.dur-=1
-		if f.dur==0 then
+		if f.y>0 then
+			f.y+=(f.ty-f.y)/10
+			f.dur-=1
+		else
+			f.dur-=3.33
+		end
+		
+		if f.dur<=0 then
 			del(float,f)
 		end
 	end
@@ -1481,7 +1399,7 @@ end
 function makepowergem()
 	local gem=rnd(powergemstypes)
 	local pg=powergemsprops[gem]
-	debug[1]=gem
+
 	del(powergemstypes,gem)
 
 	return {
@@ -1527,8 +1445,6 @@ function genfloor(f)
 end
 
 function mapgen()
- --★
- --more gems
  repeat
   copymap(48,0)
   rooms={}
@@ -2125,7 +2041,7 @@ __gfx__
 0666060606666666666600660660066006606000066060000660000c0666660c0a000a000a000a00660660606606606000000000000022222222400000000000
 00666660066606066660bb06660bb06666666660666666600666060c0660000c90aaa0900a000a00666666606606606000000000000022222220400000000000
 06066666006666606660bb06660bb06606660600066606006666664c0666060c9900099090aaa090666666606666666000000000000072222220400000000000
-000666060606666666660066666006666666660006666600466666000666664c9999999099000990666666606666666000000000000002222222400000000000
+000666060606666666660066666006666666660006666600466666006666664c9999999099000990666666606666666000000000000002222222400000000000
 00066600000666060666666006666660066666006666660006666600466666000999990009999900666666606666666000000000000022222222400000000000
 00600600000060000066660000666600066660000666600005000500050005009000009090000090660660606606606000000000000222222222420000000000
 000000000000000000000000000000000000000000000000000000000000000008888888088888888888888088888880c00000000c0c0c000880880000000000
