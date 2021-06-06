@@ -29,7 +29,7 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/
 function _init()
 	cartdata(cursed_sword)
 
-	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer","slab"],"mob_atk":[1,1,1,2,2,2,2,3,3,4,1],"mob_hp":[10,1,1,2,3,5,6,5,3,8,3],"mob_los":[5,4,23,5,5,5,4,4,4,5,2],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203],[218,218,219,219]],"mob_col":[12,11,6,8,14,11,7,9,9,13,14],"mob_def":[0,0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1,0],"mob_quench":[0,10,10,10,10,10,10,5,5,5,20],"mob_floor_min":[0,0,3,4,5,6,7,8,9,9,5],"mob_floor_max":[0,3,7,8,9,10,10,11,11,11,9],"mob_spec":["","","","","","","","","","","",""],"maxmons":[6,10,14,0,18,20,22,0,16,16,16],"minmons":[3,5,7,0,9,10,11,0,10,10,10,0],"mapani":{"ani1":[73,75,174,232,234],"ani2":[74,76,175,233,235]},"floorlist":[0,4,8,12],"storefloors":[4,8],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":4},"relic":{"mult":5}},"powergemstypes":["doomsword","shovelsword","skippingstone","vampiretooth","witcheye","cleromancer","demon heart","quicksilver","lasersword","wasp thorax"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 50%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall"," for 10⧗! be careful!"],"price":750},"skippingstone":{"name":"skipping stone","color":8,"desc":[" bump walls to skip"," a turn"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" randomly drain ♥"," equal to your atk!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see your prize!"],"price":500},"wasp thorax":{"name":"wasp thorax","color":8,"desc":["3x atk, but drops","your base ♥ to 3"]},"demon heart":{"name":"demon heart","color":8,"desc":["randomly gain 1 max ♥","when you slay an enemy"]},"quicksilver":{"name":"quicksilver","color":8,"desc":["enemy attacks miss","more often!"]},"lasersword":{"name":"laser sword","color":8,"desc":["attack atk+1 squares","in a straight line!"]}},"vases":[1,1,1,1,1,1,5,5,7,7,7],"clerotype":["♥","⧗"],"npcs":{"alchemist":{"tiles":[205,206,221,222],"dialogue":[""," that sword slew me too,"," but my soul was hidden"," elsewhere. i worry not,"," i am mightier reborn.",""]},"oldman":{"tiles":[204],"dialogue":[""," i am the last of my order."," the rest were slain long"," ago, by that very sword"," you wield.",""]},"tablet1":{"tiles":[11],"dialogue":[""," the cursed sword in your"," hand cannot be sheathed."," can you cast it back from"," whence it came, or will"," its curse claim you too?",""]}},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
+	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer","slab","mimic"],"mob_atk":[1,1,1,2,2,2,2,3,3,4,1,1],"mob_hp":[10,1,1,2,3,5,6,5,3,8,3,1],"mob_los":[5,4,23,5,5,5,4,4,4,5,2,2],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203],[218,218,219,219],[216,216,217,217]],"mob_col":[12,11,6,8,14,11,7,9,9,13,14,9],"mob_def":[0,0,0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1,0,0],"mob_quench":[0,10,10,10,10,10,10,5,5,5,20,10],"mob_floor_min":[0,0,3,4,5,6,7,8,9,9,5,13],"mob_floor_max":[0,3,7,8,9,10,10,11,11,11,9,0],"mob_spec":["","","","","","","","","","","","heavyhitter",""],"maxmons":[6,10,14,0,18,20,22,0,16,16,16],"minmons":[3,5,7,0,9,10,11,0,10,10,10,0],"mapani":{"ani1":[73,75,174,232,234],"ani2":[74,76,175,233,235]},"floorlist":[0,4,8,12],"storefloors":[4,8],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":4},"relic":{"mult":5}},"powergemstypes":["doomsword","shovelsword","skippingstone","vampiretooth","witcheye","cleromancer","demon heart","quicksilver","lasersword","wasp thorax","counterpunch"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 50%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall"," for 10⧗! be careful!"],"price":750},"skippingstone":{"name":"skipping stone","color":8,"desc":[" bump walls to skip"," a turn"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" randomly drain ♥"," equal to your atk!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see your prize!"],"price":500},"wasp thorax":{"name":"wasp thorax","color":8,"desc":["3x atk, but drops","your base ♥ to 3"]},"demon heart":{"name":"demon heart","color":8,"desc":["randomly gain 1 max ♥","when you slay an enemy"]},"quicksilver":{"name":"quicksilver","color":8,"desc":["enemy attacks miss","more often!"]},"lasersword":{"name":"laser sword","color":8,"desc":["attack atk+1 squares","in a straight line!"]},"counterpunch":{"name":"counterpunch","color":8,"desc":["2x atk against enemies","who have attacked you!"]}},"vases":[1,1,1,1,1,1,1,5,5,5,6,7,7,7,7],"clerotype":["♥","⧗"],"npcs":{"alchemist":{"tiles":[205,206,221,222],"dialogue":[""," that sword slew me too,"," but my soul was hidden"," elsewhere. i worry not,"," i am mightier reborn.",""]},"oldman":{"tiles":[204],"dialogue":[""," i am the last of my order."," the rest were slain long"," ago, by that very sword"," you wield.",""]},"tablet1":{"tiles":[11],"dialogue":[""," the cursed sword in your"," hand cannot be sheathed."," can you cast it back from"," whence it came, or will"," its curse claim you too?",""]}},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
 	mob_name,mob_atk,mob_hp,mob_los,mob_ani,mob_col,mob_def,mob_int,mob_quench,mob_minf,mob_maxf,mob_spec,minmons,maxmons=_gt.mob_name,_gt.mob_atk,_gt.mob_hp,_gt.mob_los,_gt.mob_ani,_gt.mob_col,_gt.mob_def,_gt.mob_int,_gt.mob_quench,_gt.mob_floor_min,_gt.mob_floor_max,_gt.mob_spec,_gt.minmons,_gt.maxmons
 	gem_types,gem_qual,gem_props,powergemsprops,powergemstypes,vases=_gt.gem_types,_gt.gem_qual,_gt.gems,_gt.powergemsprops,_gt.powergemstypes,_gt.vases
 
@@ -39,8 +39,7 @@ function _init()
 	
 	debug={}
 	
-	t,tani,fadeperc,buttonbuff,mob,dmob,p_mob,p_t,timer,kills,thirst,turn,atkbonus,clerotype,inv,eqp,wind,float=0,0,0,-1,{},{},addmob(1,-100,-100),0,0,0,250,0,0,_gt.clerotype,{},{},{},{},{}
-
+	t,tani,fadeperc,buttonbuff=0,0,0,-1
 
 	startgame()
 end
@@ -67,6 +66,7 @@ function _draw()
 end
 
 function startgame()
+	mob,dmob,p_mob,p_t,timer,kills,thirst,turn,atkbonus,clerotype,inv,eqp,wind,float,hitplayer={},{},addmob(1,-100,-100),0,0,0,250,0,0,_gt.clerotype,{},{},{},{},{},{}
 	hpwind,_upd,_drw=addwind(5,5,80,13,{}),update_game,draw_game
 	genfloor(0)
 end
@@ -621,6 +621,10 @@ function trig_bump(tle,destx,desty)
 		reset_store()
 	elseif isin(tle,{174,175}) then
 		win=true
+	elseif tle==6 then
+		sfx(61)
+		mset(destx,desty,78)
+		addmob(12,destx,desty)
 	elseif tle==7 then
 		sfx(61)
 		mset(destx,desty,78)
@@ -679,6 +683,9 @@ function hitmob(atkm,defm)
  local col,dmg,defmx,defmy=9,max(0,atkm.atk-defm.def),defm.x,defm.y
  if defm==p_mob then
 		col=8
+		if not isin(atkm,hitplayer) then
+			add(hitplayer,atkm)
+		end
 		if flr(rnd(101+quick+luck))>=95 then
 			dmg=0
 			addfloat("lucky!",defmx*8,defmy*8,11)
@@ -690,9 +697,11 @@ function hitmob(atkm,defm)
 		if vampire and flr(rnd(101))+luck>85 then
 			treasure("vamp!","",atkm.x,atkm.y-1,14)
 		end
+		if vengeance and isin(defm,hitplayer) then
+			dmg*=2
+		end
 	end
-	
- defm.hp-=dmg
+	defm.hp-=dmg
  defm.flash=10
 	if dmg>0 and defm.hp>0 then
 		addfloat("-"..dmg,defmx*8,defmy*8,col)
@@ -706,6 +715,9 @@ function hitmob(atkm,defm)
 	 			p_mob.basehpmax+=1
 	 		end
 	 	end
+	 	if isin(defm,hitplayer) then
+  		del(hitplayer,defm)
+  	end
 	 end
   add(dmob,defm)
   del(mob,defm)
@@ -767,7 +779,9 @@ function updatestats()
 					atk*=3
 					hpmax=3
 				elseif nm=="doomshock" and (p_mob.hp/p_mob.hpmax)<0.5 then
-				atk*=2
+					atk*=2
+				elseif nm=="counterpunch" then
+					vengeance=true
 				end
 			end
 		end
@@ -1357,6 +1371,10 @@ function genfloor(f)
 	add(mob,p_mob)
 	
 	fog=blankmap(0)
+	--[[if floor==-1 then
+		copymap(0,0)
+		print("press ❎",44,90,5+abs(sin(time()/3)*2))
+	else]]
 	if floor==0 then
 		copymap(16,0)
 	elseif isin(floor,storefloors) then
@@ -1949,7 +1967,7 @@ __gfx__
 0666060606666666666600660660066006606000066060000660000c0666660c0a000a000a000a00660660606606606000000000000022222222400000000000
 00666660066606066660bb06660bb06666666660666666600666060c0660000c90aaa0900a000a00666666606606606000000000000022222220400000000000
 06066666006666606660bb06660bb06606660600066606006666664c0666060c9900099090aaa090666666606666666000000000000072222220400000000000
-000666060606666666660066666006666666660006666600466666006666664c9999999099000990666666606666666000000000000002222222400000000000
+000666060606666666660066666006666666660006666600466666006666664c9989899099898990666666606666666000000000000002222222400000000000
 00066600000666060666666006666660066666006666660006666600466666000999990009999900666666606666666000000000000022222222400000000000
 00600600000060000066660000666600066660000666600005000500050005009000009090000090660660606606606000000000000222222222420000000000
 000000000000000000000000000000000000000000000000000000000000000008888888088888888888888088888880c00000000c0c0c000880880000000000
