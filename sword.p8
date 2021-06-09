@@ -1,9 +1,10 @@
 pico-8 cartridge // http://www.pico-8.com
 version 32
 __lua__
---[[cursed sword by christopher gibilisco
+--cursed sword 
+--by christopher gibilisco
 
-credits:
+--[[credits:
 
 deepest thanks to krystian majewski of lazydevs academy for the use of his game 
 porklike as an engine for this game. much of the code of this game was designed 
@@ -28,8 +29,8 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 function _init()
 	cartdata(cursed_sword)
-
-	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer","slab","mimic"],"mob_atk":[1,1,1,2,1,2,2,3,3,4,1,1],"mob_hp":[10,1,1,2,1,5,6,5,3,8,3,1],"mob_los":[5,4,23,5,10,5,4,4,4,5,2,4],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203],[218,218,219,219],[216,216,217,217]],"mob_col":[12,11,6,8,14,11,7,9,9,13,14,9],"mob_def":[0,0,0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1,0,0],"charge":[1,1,1,1,7,1,1,1,1,1,1,1],"mob_quench":[0,10,10,10,10,10,10,5,5,5,20,10],"mob_floor_min":[0,0,3,3,5,6,7,7,9,9,5,13],"mob_floor_max":[0,3,7,8,9,10,10,11,11,11,9,0],"mob_spec":["","","","","spawn","","","","","","","",""],"maxmons":[6,10,14,0,18,20,22,0,16,16,16],"minmons":[3,5,7,0,9,10,11,0,10,10,10,0],"mapani":{"ani1":[73,75,174,232,234],"ani2":[74,76,175,233,235]},"floorlist":[0,4,8,12],"storefloors":[4,8],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":4},"relic":{"mult":5}},"powergemstypes":["doomsword","shovelsword","skippingstone","vampiretooth","witcheye","cleromancer","demon heart","quicksilver","lasersword","wasp thorax","counterpunch"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 50%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall"," for 10⧗! be careful!"],"price":750},"skippingstone":{"name":"skipping stone","color":8,"desc":[" bump walls to skip"," a turn"],"price":250},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" randomly drain ♥"," equal to your atk!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see your prize!"],"price":500},"wasp thorax":{"name":"wasp thorax","color":8,"desc":["3x atk, but drops","your base ♥ to 3"]},"demon heart":{"name":"demon heart","color":8,"desc":["randomly gain 1 max ♥","when you slay an enemy"]},"quicksilver":{"name":"quicksilver","color":8,"desc":["enemy attacks miss","more often!"]},"lasersword":{"name":"laser sword","color":8,"desc":["attack atk+1 squares","in a straight line!"]},"counterpunch":{"name":"counterpunch","color":8,"desc":["2x atk against enemies","who have attacked you!"]}},"vases":[1,1,1,1,1,1,1,5,5,5,6,7,7,7,7],"clerotype":["♥","⧗"],"npcs":{"alchemist":{"tiles":[205,206,221,222],"dialogue":[""," that sword slew me too,"," but my soul was hidden"," elsewhere. i worry not,"," i am mightier reborn.",""]},"oldman":{"tiles":[204],"dialogue":[""," i am the last of my order."," the rest were slain long"," ago, by that very sword"," you wield.",""]},"tablet1":{"tiles":[11],"dialogue":[""," the cursed sword in your"," hand cannot be sheathed."," can you cast it back from"," whence it came, or will"," its curse claim you too?",""]}},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
+	ver="v0.2"
+	_gt=json_parse('{"mob_name":["hero","slime","eyeball","demon minion","demon mage","mindflayer","ghost","fire elemental","hellion","slayer","slab","mimic"],"mob_atk":[1,1,1,2,1,2,2,3,3,4,1,1],"mob_hp":[10,1,1,2,1,5,5,5,3,8,3,1],"mob_los":[5,4,23,5,10,5,4,4,4,5,2,4],"mob_ani":[[214,214,215,215],[200,200,201,201],[210,210,211,211],[198,198,199,199],[192,192,193,193],[194,194,195,195],[212,212,213,213],[208,208,209,209],[196,196,197,197],[202,202,203,203],[218,218,219,219],[216,216,217,217]],"mob_col":[12,11,6,8,14,11,7,9,9,13,14,9],"mob_def":[0,0,0,0,0,0,0,0,0,0,0,0],"mob_int":[1,0,1,1,1,0,1,0,0,1,0,0],"charge":[1,1,1,1,7,1,1,1,1,1,1,1],"mob_quench":[0,10,10,10,10,10,10,5,5,5,20,10],"mob_floor_min":[0,0,3,3,5,6,7,7,9,9,5,13],"mob_floor_max":[0,3,7,8,9,10,10,11,11,11,9,0],"mob_spec":["","","","","spawn","","","","","","slowpoke","",""],"maxmons":[6,10,14,0,18,20,22,0,16,16,16],"minmons":[3,5,7,0,9,10,11,0,10,10,10,0],"mapani":{"ani1":[73,75,244,232,234],"ani2":[74,76,245,233,235]},"floorlist":[0,4,8,12],"storefloors":[4,8],"gems":{"amethyst":{"color":12,"mod":"atk","base":1},"ruby":{"color":14,"mod":"♥","base":3},"diamond":{"color":7,"mod":"⧗","base":1},"emerald":{"color":11,"mod":"luck","base":1},"chipped":{"mult":1},"rough":{"mult":2},"cut":{"mult":3},"flawless":{"mult":4},"relic":{"mult":5}},"powergemstypes":["doomsword","shovelsword","vampiretooth","witcheye","cleromancer","demon heart","quicksilver","lasersword","counterpunch"],"powergemsprops":{"doomsword":{"name":"doomshock","color":8,"desc":[" 2x atk when hp"," drops below 50%!"],"price":250},"shovelsword":{"name":"sapper pick","color":8,"desc":[" dig through a wall"," for 10⧗! be careful!"],"price":750},"vampiretooth":{"name":"vampire tooth","color":8,"desc":[" randomly drain ♥"," equal to your atk!"],"price":250},"witcheye":{"name":"witch eye","color":8,"desc":[" you can see through"," solid objects!"],"price":750},"cleromancer":{"name":"cleromancer","color":8,"desc":[" attack an enemy and"," see your prize!"],"price":500},"wasp thorax":{"name":"wasp thorax","color":8,"desc":["3x atk, but drops","your base ♥ to 3"]},"demon heart":{"name":"demon heart","color":8,"desc":["randomly gain 1 max ♥","when you slay an enemy"]},"quicksilver":{"name":"quicksilver","color":8,"desc":["enemy attacks miss","more often!"]},"lasersword":{"name":"laser sword","color":8,"desc":["attack atk+1 squares","in a straight line!"]},"counterpunch":{"name":"counterpunch","color":8,"desc":["2x atk against enemies","who have attacked you!"]}},"vases":[1,1,1,1,1,1,1,1,1,1,5,5,5,6,1,1,7,7,7],"clerotype":["♥","⧗"],"npcs":{"alchemist":{"tiles":[205,206,221,222],"dialogue":[""," that sword slew me too,"," but my soul was hidden"," elsewhere. i worry not,"," i am mightier reborn.",""]},"oldman":{"tiles":[204],"dialogue":[""," i am the last of my order."," the rest were slain long"," ago, by that very sword"," you wield.",""]},"tablet1":{"tiles":[11],"dialogue":[""," the cursed sword in your"," hand cannot be sheathed."," can you cast it back from"," whence it came, or will"," its curse claim you too?",""]}},"tools":{"dirx":[-1,1,0,0,1,1,-1,-1],"diry":[0,0,-1,1,-1,1,1,-1],"dpal":[0,1,1,2,1,13,6,4,4,9,3,13,1,13,14],"carve_signatures":["0b11111111","0b11010110","0b01111100","0b10110011","0b11101001"],"carve_masks":[0,"0b00001001","0b00000011","0b00001100","0b00000110"],"wall_sig":[251,233,253,84,146,80,16,144,112,208,241,248,210,177,225,120,179,0,124,104,161,64,240,128,224,176,242,244,116,232,178,212,247,214,254,192,48,96,32,160,245,250,243,249,246,252],"wall_msk":[0,6,0,11,13,11,15,13,3,9,0,0,9,12,6,3,12,15,3,7,14,15,0,15,6,12,0,0,3,6,12,9,0,9,0,15,15,7,15,14,0,0,0,0,0,0]}}')
 	mob_name,mob_atk,mob_hp,mob_los,mob_ani,mob_col,mob_def,mob_int,mob_quench,mob_minf,mob_maxf,mob_spec,minmons,maxmons,mob_charge=_gt.mob_name,_gt.mob_atk,_gt.mob_hp,_gt.mob_los,_gt.mob_ani,_gt.mob_col,_gt.mob_def,_gt.mob_int,_gt.mob_quench,_gt.mob_floor_min,_gt.mob_floor_max,_gt.mob_spec,_gt.minmons,_gt.maxmons,_gt.charge
 	gem_types,gem_qual,gem_props,powergemsprops,powergemstypes,vases=_gt.gem_types,_gt.gem_qual,_gt.gems,_gt.powergemsprops,_gt.powergemstypes,_gt.vases
 	
@@ -40,7 +41,6 @@ function _init()
 	debug={}
 	
 	t,tani,fadeperc,buttonbuff=0,0,0,-1
-
 	startgame()
 end
 
@@ -54,6 +54,16 @@ end
 function _draw()
 	_drw()
  	drawwind()
+ 	if logo_y>-24 then
+  logo_t-=1
+  if logo_t<=0 then
+  logo_y+=logo_t/20
+  end
+  --palt(11,true)
+  palt(0,true)
+  spr(128,0,logo_y,16,3)
+  print(ver,5,154-logo_y,5)
+ end
  
 	checkfade()
 	--★
@@ -66,7 +76,7 @@ function _draw()
 end
 
 function startgame()
-	mob,dmob,p_mob,p_t,timer,kills,thirst,turn,atkbonus,clerotype,inv,eqp,wind,float,hitplayer={},{},addmob(1,-100,-100),0,0,0,250,0,0,_gt.clerotype,{},{},{},{},{},{}
+	logo_t,logo_y,mob,dmob,p_mob,p_t,timer,kills,thirst,turn,atkbonus,clerotype,inv,eqp,wind,float,hitplayer,win,skipai,startgem=100,35,{},{},addmob(1,-100,-100),0,0,0,250,0,0,_gt.clerotype,{},{},{},{},{}
 	hpwind,_upd,_drw=addwind(5,5,80,13,{}),update_game,draw_game
 	genfloor(0)
 end
@@ -86,16 +96,13 @@ function update_game()
 	updatestats()
 end
 
-
-
-
 function update_inv()
 	local curs=curwind.cur
 	local invcurs=curs-4
 	
 	move_menu(curwind)
 
- if curwind==invwind then
+ 	if curwind==invwind then
 		if curs<4 and eqp[curs] then
 			infowind.txt=eqp[curs].desc
 		elseif curs>4 and inv[curs-4] then
@@ -106,21 +113,20 @@ function update_inv()
 	end
 
 	if btnp(4) then
-  if curwind==invwind then
-    
-   _upd=update_game
-   invwind.dur,statwind.dur,infowind.dur=0,0,0
-  else --★elseif curwind==usewind then
-   usewind.dur=0
-   curwind=invwind
-  end
- elseif btnp(5) then
-  if curwind==invwind then
+	  if curwind==invwind then
+	   	_upd=update_game
+	   	invwind.dur,statwind.dur,infowind.dur=0,0,0
+	  else --★elseif curwind==usewind then
+	   usewind.dur=0
+	   curwind=invwind
+	  end
+ 	elseif btnp(5) then
+  	if curwind==invwind then
 			showuse()
-	 elseif curwind==usewind then
+	 	elseif curwind==usewind then
 			triguse()
 		end
- end
+ 	end
 end
 
 function move_menu(wnd)
@@ -142,7 +148,6 @@ function update_pturn()
 	if p_t==1 then
 		_upd=update_game
 		trig_step()
-		if skipper then skipai=false end
 		if checkend() and not skipai then
 			do_ai()
 			turn+=1
@@ -178,7 +183,7 @@ function update_gameover()
 		startgame()
 	end
 end
-
+--
 function getbutton()
 	for i=0,5 do
 		if btnp(i) then
@@ -230,7 +235,7 @@ function draw_game()
 		end
 	end
 
-	for f=#float,1,-1 do
+	for f=1,#float do
 		ft=float[f]
 		oprint8(ft.txt,ft.x,ft.y,ft.c,0)
 	end
@@ -238,10 +243,10 @@ end
 
 function drawmob(m)
 	local col=m.col
-		if m.flash>0 then
-			m.flash-=1
-			col=7
-		end
+	if m.flash>0 then
+		m.flash-=1
+		col=7
+	end
 	_drawspr(getframe(m.ani),m.x*8+m.ox,m.y*8+m.oy,col,m.flp)
 
 end
@@ -254,13 +259,20 @@ function draw_gameover()
 	spr(gover_spr,gover_x,24,gover_w,3)
 	
 	color(7)
-	cursor(44,50)
-	print("floor: "..floor)
-	print("steps: "..turn)
-	print("kills: "..kills)
+	local floor_str,steps_str,kills_str="floor: "..floor,"steps: "..turn,"kills: "..kills
+
+	print(floor_str,centx(#floor_str),56)
+	print(steps_str,centx(#steps_str),62)
+	print(kills_str,centx(#kills_str),68)
 	
+	print("start gem:",centx(9),80)
+	if startgem then
+		print(startgem,centx(#startgem),86)
+	else
+		print("none!",centx(4),86)
+	end
 	
-	print("press ❎",44,90,5+abs(sin(time()/3)*2))
+	print("press ❎",centx(7),104,5+abs(sin(time()/3)*2))
 end
 
 function draw_win()
@@ -304,10 +316,10 @@ end
 
 function oprint8(_t,_x,_y,_c,_c2)
 	for i=1,8 do
-  print(_t,_x+dirx[i],_y+diry[i],_c2)
- end
- print(_t,_x,_y,_c)
-end
+	  print(_t,_x+dirx[i],_y+diry[i],_c2)
+	end
+	print(_t,_x,_y,_c)
+	end
 
 function dist(fx,fy,tx,ty)
 	return sqrt((fx-tx)^2+(fy-ty)^2)
@@ -341,27 +353,28 @@ end
 
 function fadeout(spd,_wait)
 	if (spd==nil) spd=0.04
- if (_wait==nil) _wait=0
- repeat
-  fadeperc=min(fadeperc+spd,1)
-  dofade()
- 	flip()
- until fadeperc==1
- wait(_wait)
+ 	if (_wait==nil) _wait=0
+ 	repeat
+  	fadeperc=min(fadeperc+spd,1)
+  	dofade()
+ 		flip()
+ 	until fadeperc==1
+ 	wait(_wait)
 end
 
+
+-- json parser
+-- from: https://gist.github.com/tylerneylon/59f4bcf316be525b30ab
 _tok={
  ['true']=true,
  ['false']=false}
 _g={}
 
--- json parser
--- from: https://gist.github.com/tylerneylon/59f4bcf316be525b30ab
 table_delims={['{']="}",['[']="]"}
 
 function match(s,tokens)
   for i=1,#tokens do
-	if(s==sub(tokens,i,i)) return true
+		if(s==sub(tokens,i,i)) return true
   end
   return false
 end
@@ -395,15 +408,15 @@ function json_parse(wrkstr, pos, end_delim)
 		local obj,key,delim_found={},true,true
 		pos+=1
 		while true do
-	 key,pos=json_parse(wrkstr, pos, table_delims[first])
-	 if(key==nil) return obj,pos
-	 	if first=="{" then
+	 		key,pos=json_parse(wrkstr, pos, table_delims[first])
+	 		if(key==nil) return obj,pos
+	 		if first=="{" then
 				pos=skip_delim(wrkstr,pos,':',true)  -- true -> error if missing.
 				obj[key],pos=json_parse(wrkstr,pos)
-		 else
+		 	else
 				add(obj,key)
-	 	end
-	 	pos,delim_found=skip_delim(wrkstr, pos, ',')
+	 		end
+	 		pos,delim_found=skip_delim(wrkstr, pos, ',')
 		end
 	elseif first=='"' then
 		return parse_str_val(wrkstr,pos+1)
@@ -412,10 +425,10 @@ function json_parse(wrkstr, pos, end_delim)
 	elseif first==end_delim then  -- end of an object or array.
 		return nil,pos+1
 	else
-			for lit_str,lit_val in pairs(_tok) do
-		 local lit_end=pos+#lit_str-1
-		 	if sub(wrkstr,pos,lit_end)==lit_str then return lit_val,lit_end+1 end
-			end
+		for lit_str,lit_val in pairs(_tok) do
+			local lit_end=pos+#lit_str-1
+			if sub(wrkstr,pos,lit_end)==lit_str then return lit_val,lit_end+1 end
+		end
 	end
 end
 
@@ -491,7 +504,7 @@ function unfogtile(x,y)
   for i=1,4 do
    local tx,ty=x+dirx[i],y+diry[i]
    if inbounds(tx,ty) and not iswalkable(tx,ty,"sight") then
-	fog[tx][ty]=0
+		fog[tx][ty]=0
    end
   end
  end
@@ -512,14 +525,14 @@ function calcdist(tx,ty)
   candnew={}
   for c in all(cand) do
    for d=1,4 do
-	local dx=c.x+dirx[d]
-	local dy=c.y+diry[d]
-	if inbounds(dx,dy) and distmap[dx][dy]==-1 then
-	 distmap[dx][dy]=step
-	 if iswalkable(dx,dy) then
-	  add(candnew,{x=dx,y=dy})
-	 end
-	end
+		local dx=c.x+dirx[d]
+		local dy=c.y+diry[d]
+		if inbounds(dx,dy) and distmap[dx][dy]==-1 then
+	 		distmap[dx][dy]=step
+	 		if iswalkable(dx,dy) then
+	  		add(candnew,{x=dx,y=dy})
+	 		end
+		end
    end
   end
   cand=candnew
@@ -546,14 +559,14 @@ end
 function copymap(x,y)
 	local tle
 	for _x=0,15 do
-  for _y=0,15 do
-  	tle=mget(_x+x,_y+y)
-   mset(_x,_y,tle)
-   if tle==15 then
-   	p_mob.x,p_mob.y=_x,_y
-   end
-  end
- end
+  	for _y=0,15 do
+  		tle=mget(_x+x,_y+y)
+   		mset(_x,_y,tle)
+   		if tle==15 then
+   			p_mob.x,p_mob.y=_x,_y
+   		end
+  	end
+ 	end
 end
 
 
@@ -619,7 +632,8 @@ function trig_bump(tle,destx,desty)
 	elseif isin(floor,storefloors) and tle==238 then
 		treasure("max♥+10","",destx,desty,10)
 		reset_store()
-	elseif isin(tle,{174,175}) then
+	elseif isin(tle,{244,245}) then
+		p_mob.ani={224,224,224,224}		
 		win=true
 	elseif tle==6 then
 		sfx(61)
@@ -662,20 +676,20 @@ end
 
 function iswalkable(x,y,mode)
 	local mode=mode or ""
- if inbounds(x,y) then
-  local tle=mget(x,y)
-  if mode=="sight" then
+ 	if inbounds(x,y) then
+  	local tle=mget(x,y)
+  	if mode=="sight" then
 			return not fget(tle,2)
-  else
-	  if not fget(tle,0) then
-	   if mode=="checkmobs" then
-	    return not getmob(x,y)
-	   end
-	   return true
-	  end
-	 end
- end
- return false
+  	else
+	 		if not fget(tle,0) then
+	   		if mode=="checkmobs" then
+	    		return not getmob(x,y)
+	   		end
+	   		return true
+	  	end
+	 	end
+ 	end
+ 	return false
 end
 
 function hitmob(atkm,defm)
@@ -702,7 +716,7 @@ function hitmob(atkm,defm)
 		end
 	end
 	defm.hp-=dmg
- defm.flash=10
+ 	defm.flash=10
 	if dmg>0 and defm.hp>0 then
 		addfloat("-"..dmg,defmx*8,defmy*8,col)
 	end
@@ -718,7 +732,7 @@ function hitmob(atkm,defm)
 	 	if isin(defm,hitplayer) then
   		del(hitplayer,defm)
   	end
-	 end
+	end
   add(dmob,defm)
   del(mob,defm)
   defm.dur=10
@@ -729,29 +743,29 @@ function checkend()
 	if win then
 		--★ combine these two things
 		wind={}
-  gover_spr=24
-  gover_x=31
-  gover_w=32
+  	gover_spr=24
+  	gover_x=31
+  	gover_w=32
 		_upd=update_gameover
 		_drw=draw_gameover
 		fadeout(0.02)
 		return false
 	elseif p_mob.hp<=0 then
 		wind={}
-  gover_spr=16
-  gover_x=28
-  gover_w=32
+  	gover_spr=16
+  	gover_x=28
+  	gover_w=32
 		_upd=update_gameover
 		_drw=draw_gameover
 		fadeout(0.02)
 		sfx(44)
 		return false
 	end
-		return true
+	return true
 end
 
 function updatestats()
-	quick,timer,dig,xray,clero,skipper,vampire,demon,laser=0,0
+	quick,timer,dig,xray,clero,vampire,demon,laser=0,0
 	local atk,def,hpmax,lck=1+atkbonus,1,p_mob.basehpmax,0
 	
 	for i=1,3 do
@@ -765,8 +779,6 @@ function updatestats()
 					xray=true
 				elseif nm=="cleromancer" then
 					clero=true
-				elseif nm=="skipping stone" then
-					skipper=true
 				elseif nm=="vampire tooth" then
 					vampire=true
 				elseif nm=="demon heart" then
@@ -819,11 +831,13 @@ function treasure(txt,amt,destx,desty,col)
 		p_mob.hp=min(p_mob.hp+amt,p_mob.hpmax)
 	elseif txt=="●" then
 		if freeslot(inv,6)>0 then
-			takeitem(makegem())
+			local gem=makegem()
+			takeitem(gem)
 			mset(destx,desty,1)
 			sfx(61)
 			if floor==0 then
 				msg="press ❎ and equip!"
+				startgem=gem.name
 			end
 		else
 			msg="full!"
@@ -930,23 +944,23 @@ function drawwind()
 		spr(255,wx-5+min(sin(time())),wy)
 	end
 
-   wy+=6
+  wy+=6
   end
   clip()
   if w.dur then
-   w.dur-=1
-   if w.dur<=0 then
-	local dif=w.h/4
-	w.y+=dif/2
-	w.h-=dif
-	if w.h<3 then
-	 del(wind,w)
-	end
-   end
+  	w.dur-=1
+  	if w.dur<=0 then
+			local dif=w.h/4
+			w.y+=dif/2
+			w.h-=dif
+				if w.h<3 then
+	 				del(wind,w)
+				end
+   	end
   else
-   if w.button then
-	oprint8("❎",wx+ww-15,wy-1+min(sin(time())),6,0)
-   end
+  	if w.button then
+			oprint8("❎",wx+ww-15,wy-1+min(sin(time())),6,0)
+   	end
   end
  end
 end
@@ -968,7 +982,7 @@ end
 
 function addfloat(_txt,_x,_y,_c)
 	_x=mid(0,_x-(#_txt*4)/2+5,128-(#_txt*4+4))
-	add(float,{txt=_txt,x=_x,y=_y,c=_c,ty=_y-10,dur=70})
+	add(float,{txt=_txt,x=_x,y=_y,c=_c,ty=_y-10,dur=40})
 end
 
 function dofloats()
@@ -1032,7 +1046,7 @@ function showinv()
 	add(colors,6)
 
 	curwind=invwind
-	end
+end
 
 function showuse()
 	local txt,itm={}
@@ -1081,11 +1095,11 @@ function triguse()
 
 	updatestats()
 	usewind.dur=0
- del(wind,invwind)
- del(wind,statwind)
- del(wind,infowind)
- showinv()
- invwind.cur=i
+	del(wind,invwind)
+	del(wind,statwind)
+ 	del(wind,infowind)
+ 	showinv()
+ 	invwind.cur=i
 end
 
 function floormsg()
@@ -1120,19 +1134,19 @@ function addmob(typ,mx,my)
 		y=my,
 		task=ai_wait}
 
-	 add(mob,q)
-		return q
+	add(mob,q)
+	return q
 end
 
 function mobwalk(mb,dx,dy)
-		mb.x+=dx
-		mb.y+=dy
+	mb.x+=dx
+	mb.y+=dy
 
-		mobflip(mb,dx)
-		mb.sox,mb.soy=-dx*8,-dy*8
-		mb.ox,mb.oy=mb.sox,mb.soy 
+	mobflip(mb,dx)
+	mb.sox,mb.soy=-dx*8,-dy*8
+	mb.ox,mb.oy=mb.sox,mb.soy 
 
-		mb.mov=mov_walk
+	mb.mov=mov_walk
 end
 
 function mobbump(mb,dx,dy)
@@ -1177,7 +1191,9 @@ function ai_wait(m)
  if cansee(m,p_mob) then
  	if m.spec=="spawn" then
  		m.task=ai_attack_spawn
- 	else
+ 	elseif m.spec=="slowpoke" then
+ 		m.task=ai_slowpoke
+ 	else 
  		m.task=ai_attack_basic
  	end
   m.tx,m.ty=p_mob.x,p_mob.y
@@ -1195,8 +1211,8 @@ function ai_attack_spawn(m)
 		local cand={}
 		for i=1,4 do
 			dx,dy=dirx[i],diry[i]
-			if iswalkable(m.x+dx,m.y+dy,"checkmobs") then
-				add(cand,{x=m.x+dx,y=m.y+dy})
+			if iswalkable(mx+dx,my+dy,"checkmobs") then
+				add(cand,{x=mx+dx,y=my+dy})
 			end
 		end		
 		if cand and #cand>0 then
@@ -1205,10 +1221,25 @@ function ai_attack_spawn(m)
 			addfloat("summon!",mx*8+2,my*8,12)
 			addmob(rnd({2,3}),c.x,c.y)
 		end
-	elseif dist(m.x,m.y,px,py)==1 then
+	elseif dist(mx,my,px,py)==1 then
 		local dx,dy=px-mx,py-my
 		mob_melee_attack(m,dx,dy)
 	else
+		return ai_move(m)
+	end
+end
+
+function ai_slowpoke(m)
+	local px,py,mx,my=p_mob.x,p_mob.y,m.x,m.y	
+
+	if dist(mx,my,px,py)==1 then
+		local dx,dy=px-mx,py-my
+		mob_melee_attack(m,dx,dy)
+		return true
+	elseif m.charge==0 then
+		m.charge=1
+	else 
+		m.charge=0
 		return ai_move(m)
 	end
 end
@@ -1221,7 +1252,7 @@ end
 
 function ai_attack_basic(m)
 	local px,py,mx,my=p_mob.x,p_mob.y,m.x,m.y
-	if dist(m.x,m.y,px,py)==1 then
+	if dist(mx,my,px,py)==1 then
 		local dx,dy=px-mx,py-my
 		mob_melee_attack(m,dx,dy)
 		return true
@@ -1230,6 +1261,7 @@ function ai_attack_basic(m)
 	end
 	return false
 end
+
 function ai_move(m)
 	local mx,my,px,py=m.x,m.y,p_mob.x,p_mob.y
 		if cansee(m,p_mob) then
@@ -1408,10 +1440,7 @@ function genfloor(f)
 	add(mob,p_mob)
 	
 	fog=blankmap(0)
-	--[[if floor==-1 then
-		copymap(0,0)
-		print("press ❎",44,90,5+abs(sin(time()/3)*2))
-	else]]
+	
 	if floor==0 then
 		copymap(16,0)
 	elseif isin(floor,storefloors) then
@@ -1454,63 +1483,61 @@ end
 ----------------
 
 function genrooms()
- local fmax,rmax=5,4
- local mw,mh=6,6
+	local fmax,rmax=5,4
+	local mw,mh=6,6
  
- repeat
-  --todo: 1st room bigger?
-  local r=rndroom(mw,mh)
-  if placeroom(r) then
-   rmax-=1
-  else
-   fmax-=1
-   --★
-   if r.w>r.h then
-    mw=max(mw-1,3)
-   else
-    mh=max(mh-1,3)
-   end
-  end
- until fmax<=0 or rmax<=0
+	repeat
+  	local r=rndroom(mw,mh)
+  	if placeroom(r) then
+  		rmax-=1
+  	else
+  		fmax-=1
+	  	if r.w>r.h then
+	   		mw=max(mw-1,3)
+	   	else
+	    	mh=max(mh-1,3)
+	   	end
+  	end
+ 	until fmax<=0 or rmax<=0
 end
 
 
 
 function rndroom(mw,mh)
- local _w=3+flr(rnd(mw-2))
- mh=mid(35/_w,3,mh)
- local _h=3+flr(rnd(mh-2))
- return {
-  x=0,
-  y=0,
-  w=_w,
-  h=_h
- }
+	local _w=3+flr(rnd(mw-2))
+	mh=mid(35/_w,3,mh)
+	local _h=3+flr(rnd(mh-2))
+	return {
+	  x=0,
+	  y=0,
+	  w=_w,
+	  h=_h
+	}
 end
 
 function placeroom(r)
- local cand,c={}
+	local cand,c={}
  
- for _x=0,16-r.w do
-  for _y=0,16-r.h do
-   if doesroomfit(r,_x,_y) then
-    add(cand,{x=_x,y=_y})
-   end
-  end
- end
+	for _x=0,16-r.w do
+		for _y=0,16-r.h do
+ 			if doesroomfit(r,_x,_y) then
+    		add(cand,{x=_x,y=_y})
+   		end
+  	end
+ 	end
  
- if #cand==0 then return false end
+	if #cand==0 then return false end
  
- c=rnd(cand)
- r.x=c.x
- r.y=c.y
- add(rooms,r) 
- for _x=0,r.w-1 do
-  for _y=0,r.h-1 do
-   mset(_x+r.x,_y+r.y,1)
-   roomap[_x+r.x][_y+r.y]=#rooms
-  end
- end
+	c=rnd(cand)
+	r.x=c.x
+	r.y=c.y
+	add(rooms,r) 
+	for _x=0,r.w-1 do
+ 		for _y=0,r.h-1 do
+  		mset(_x+r.x,_y+r.y,1)
+   		roomap[_x+r.x][_y+r.y]=#rooms
+  	end
+ 	end
  return true
 end
 
@@ -1518,11 +1545,10 @@ function doesroomfit(r,x,y)
  for _x=-1,r.w do
   for _y=-1,r.h do
    if iswalkable(_x+x,_y+y) then
-    return false
+   	return false
    end
   end
  end
- 
  return true
 end
 
@@ -1542,8 +1568,8 @@ function mazeworm()
   end
  
   if #cand>0 then
-   local c=rnd(cand)
-   digworm(c.x,c.y)
+  	local c=rnd(cand)
+   	digworm(c.x,c.y)
   end
  until #cand<=1
 end
@@ -1554,18 +1580,18 @@ function digworm(x,y)
  repeat
   mset(x,y,1)
   if not cancarve(x+dirx[dr],y+diry[dr],false) or (rnd()<0.5 and stp>2) then
-   stp=0
-   local cand={}
-   for i=1,4 do
-    if cancarve(x+dirx[i],y+diry[i],false) then
-     add(cand,i)
-    end
-   end
-   if #cand==0 then
-    dr=8
-   else
-    dr=rnd(cand)
-   end
+  	stp=0
+  	local cand={}
+   	for i=1,4 do
+   		if cancarve(x+dirx[i],y+diry[i],false) then
+     		add(cand,i)
+    	end
+   	end
+   	if #cand==0 then
+    	dr=8
+   	else
+    	dr=rnd(cand)
+   	end
   end
   x+=dirx[dr]
   y+=diry[dr]
@@ -1959,38 +1985,38 @@ __gfx__
 00000000000000000000000066666660666066606666666066666660666666606660000000006660000066606660666000000000666000000000000000000000
 00000000000000000000000066666660666006600666660006666600066666006660000000006660000066606660666000000000666000000000000000000000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-00000000700777700007000000000000000000000000000000000077700070000070000000000000000000000000000000000000000000000000007770000000
-00000000007000777770000000000000000000000000000000000000700070000070000000000000000000000000000000000000000000000000000070000000
-00000007070000707700000000000000000000000000000000000007700070000070000000777770700000000000000000000000000000000000000770000000
-00000070700000700700000000000000000000000000000000000000700070000070000007000077000000000000000000000000000000000000000070000000
-00000770700000770000000000000000000000000000000000000007700070000070000070000007000000000000000000000000000000000000000770000000
-00000077700000700000000000000000000000000000000000000000700070000070000770000000000000000000000000000000000000000000000070000000
-00000770700000700000000000000000000000000000000000000007700070000070007070000000007000000000000000000000000000000000000770000000
-00000070700000700000000000000000000000000000000000000000700070000070007070000000070000000000000000000000000000000000000070000000
-00000770070000070007770007770777700077700007770000777707700070000070007070000000700000777077707770077770070777700077770770000000
-00000070000000070000770007007700070770070070007007700077700070000070000707777777777000007007000700707007007700070770007770000000
-00000770000000070000700007000700077700000700000770700000700070000070000070000070000700077007000707007007700700077070000070000000
-00000070000000070000700007007700707700000777777770700007700070000070000007777777770070007007000707707007707700707070000770000000
-00000770000000070000700007000700000777770700000070700000700070000070000000007000007007077007000707007007700700007070000070000000
-00000070000000070000700007007700000000007700000770700007700070000070000000070000000707007007000707707007707700007070000770000000
-00000770000000070000770007000700007000007070007007700077700070000070007700700000000077077000700700707007000700000770007770000000
-00000077000000070070077770707770000777770007770000777700770070000070070777000000000007007770077700077770007770000077770077000000
-00000007700000070700000000000000000000000000000000000000000070000070700770000000000070000000000070000000000000002bbbbbbb2b2b2bbb
-0000000077000007700000000000000000000000000000000000000000007000007070077700000000070000000000000000000000000000bb22bb2bb2bb2bb2
-0000000007777777000000000000000000000000000000000000000000007000007007700777777777700000000000000000000000000000bbbb22bbbbbbb2bb
-00000000000000000000000000000000000000000000000000000000000070000070000000000000000000000000000000000000000000002b2bbbbbb2b2bbbb
-0000000000000000000000000000000000000000000000000000000000007000007000000000000000000000000000000000000000000000b2bb2b222bbbb2b2
-0000000000000000000000000000000000000000000000000000000000007000007000000000000000000000000000000000000000000000bbbbb2bbb2b2bbbb
-00000000000000000000000000000000000000000000000000000000000070000070000000000000000000000000000000000000000000002222bbbb2bb2bb2b
-0000000000000000000000000000000000000000000000007777777777777777777777777777777000000000000000000000000000000000bb2bb2bb2bb2b2b2
-00000077700000000000700700700000000070070070000077777777777777777777777777777770d0d0d0d00880880880880880d0d0d0d00000000000000000
-00000777770000000000700700700000000070070070000077000000000070000070000000000770000000000880880880880880000000000000000000000000
-00007707077000000000700700700000000070070070000077000000000070000070000000000770d0d0d008088088088088088080d0d0d00000000000000000
-00007007007000000000700700700000000007070700000077700000000070000070000000007770000000880880880880880880880000000000000000000000
-00007770777000000000700700700000000007070700000007700000000070000070000000007700d0d0088008808808808808800880d0d00000000000000000
-00000777770000000000700700700000000000777000000000700000000070000070000000007000000088080880880880880880808800000000000000000000
-00007077707000000000700700700000000000777000000000000000000070000070000000000000d00880880880880880880880880880d00000000000000000
-00007077707000000000700700700000000000070000000000000000000070000070000000000000008808800880880880880880088088000000000000000000
+0000005585a8885055a8500000000000000000000000000000055a888000000000000000000000000000000000000000000000000000000000005a8885000000
+0000055a5a855a88888500000000000000000000000000000000555a850000000000000005555555550000000000000000000000000000000000055a85000000
+000055a8a8555a8588500000000000000000000000000000000005a885000000000000005a88888585000000000000000000000000000000000000a885000000
+00055a8a85555a85a85000000000000000000000000000000000055a8500000000000005a8555a88550000000000000000000000000000000000005a85000000
+0005a88a85555a8855550000000000000000000000000000000055a8850000000000005a855555a855500000000000000000000000000000000005a885000000
+00055a8885555a85555550000000000000000000000000000005555a85000000000005a885555555555500000000000000000000000000000000555a85000000
+0005a88a85555a8555555500000000000000000000000000005555a88500000000005a85855555555a855000000000000000000000000000000555a885000000
+00055a8a85555a85555555555555555555555555555555555555555a8500000000005a8585555555a85555555555555555555555555555555555555a85000000
+0005a88aa85555a855a88855a888a888855a888555a888555a8888a88500000000005a858555555585555a888a888a8885a88885a8a888855a8888a885000000
+00055a8a555555a8555a8855a85a8855a8a885a85a855a85a8855a888500000000005a85a88888888885555a85a855a85a8a85a85a8855a8a8855a8885000000
+0005a88a555555a8555a8555a855a855aa885555a85555a88a85555a85000000000005a885555a8555a855a885a855a8a85a85a885a855a88a85555a85000000
+00055a8a555555a8555a8555a85a88558a885555a88888888a8555a88500000000000055a8888888885a855a85a855a8a88a85a88a885a8a8a8555a885000000
+0005a88a555555a8555a8555a855a85555a88888a85555558a85555a8500000000000005555a85555a85a8a885a855a8a85a85a885a8555a8a85555a85000000
+00055a8a555555a8555a8555a85a88555555555aa85555a88a8555a8850000000000000005a8555555a8585a85a855a8a88a85a88a88555a8a8555a885000000
+0005a88a555555a8555a8855a855a8555a85555a8a855a85a8855a8885000000000005005a855555555a88a8855a85a85a8a85a855a85555a8855a8885000000
+00055a88555555a85a85a8888a8a888555a8888855a888555a8888558850000000005855885555555555a85a8885a88855a888855a8885555a88885588500000
+000055a8855555a8585555555555555555555555555555555555555555500000005a85a885555555555a85555555555a85555555555555555555555555500000
+0000055a885555a8850000000000000000000000000000000000000000000000005a85a88855555555a855000000000550000000000000000000000000000000
+00000055a888888850000000000000000000000000000000000000000000000000055885a8888888888550000000000000000000000000000000000000000000
+00000000555555500000000000000000000000000000000000000000000000000000055555555555555500000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 000000080000000900666000000000000606060000000000060006000000000000066000000000000000000c0000000000666000000000022200000000000000
 006006040060060406666600006660006060660006060600066666000600060000660600000660000060060c0000000c06666600000000220200000000000000
 006666040066660466660660066666000606666060606600066969000666660006606060006606000066660c0060060c0660f000000002200020000000000000
@@ -1999,29 +2025,30 @@ __gfx__
 606666046066660406666600066666006666060606660606666666606666666006666660666666666066660066666664f5566600000002000020000000000000
 06666600066666000660660006606600006666660066666606000600000060000066660066666666066666006066660005555500000000200200b00000000000
 66666600666666000060600000606000000666600006666000000000000000000000000000000000666666000666660004000400000002222220b00000000000
-6660660600000000006666000000000000666000006660000066600c000000000099900000000000066666600000000000000000000002222222400000000000
-0666666666606606066666600066660006666600066666000666660c0066600c0900090000999000660660600666666000000000000022222222700000000000
-0666060606666666666600660660066006606000066060000660000c0666660c0900090009000900660660606606606000000000000022222222400000000000
-00666660066606066660bb06660bb06666666660666666600666060c0660000c9099909009000900666666606606606000000000000022222220400000000000
-06066666006666606660bb06660bb06606660600066606006666664c0666060c9900099090999090666666606666666000000000000072222220400000000000
-000666060606666666660066666006666666660006666600466666006666664c9989899099898990666666606666666000000000000002222222400000000000
-00066600000666060666666006666660066666006666660006666600466666000999990009999900666666606666666000000000000022222222400000000000
-00600600000060000066660000666600066660000666600005000500050005009000009090000090660660606606606000000000000222222222420000000000
-000000000000000000000000000000000000000000000000000000000000000008888888088888888888888088888880c00000000c0c0c000880880000000000
-0000000000000000000000000000000000000000000000000000000000000000880000808800008008000088080000880c0c0000ccccccc08888e88000000000
-000000000000000000000000000000000000000000000000000000000000000080888808808888088088880880888808008000000cacac0088888e8000000000
-0000000000000000000000000000000000000000000000000000000000000000088000880880008888000880880008800c0600000ceaec008888888000000000
-00000000000000000000000000000000000000000000000000000000000000008808882b880888bb2b8880882b888088000060000c6e6c000888880000000000
-0000000000000000000000000000000000000000000000000000000000000000808b2b22808b2bbbb2b2b8082bb2b808000006000c666c000088800000000000
-000000000000000000000000000000000000000000000000000000000000000008bbb2bb08b2b22bb2bbbb80bbbb2b800000006000ccc0000008000000000000
-00000000000000000000000000000000000000000000000000000000000000008bb2b2bb82bbbbb2bb222b282bb22bb800000000000000000000000000000000
-00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050000000060606000550550070000000
-00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005050000666666605555655077000000
-00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000500000067676005555565077700000
-0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000506000006d7d6005555555077000000
-00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006000065d56000555550070000000
-00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600065556000055500000000000
-00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000060006660000005000000000000
+6660660600000000006666000000000000666000006660000066600c00000000009990000000000006666660000000000077700a000002222222400000000000
+0666666666606606066666600066660006666600066666000666660c0066600c090009000099900066066060066666600777770a000022222222700000000000
+0666060606666666666600660660066006606000066060000660000c0666660c090009000900090066066060660660600778880a000022222222400000000000
+00666660066606066660bb06660bb06666666660666666600666060c0660000c909990900900090066666660660660600777870a000022222220400000000000
+06066666006666606660bb06660bb06606660600066606006666664c0666060c990009909099909066666660666666607777777a000072222220400000000000
+000666060606666666660066666006666666660006666600466666006666664c9989899099898990666666606666666077777700000002222222400000000000
+00066600000666060666666006666660066666006666660006666600466666000999990009999900666666606666666007777700000022222222400000000000
+00600600000060000066660000666600066660000666600005000500050005009000009090000090660660606606606007000700000222222222420000000000
+0077700a0000000000000000000000000000000000000000000000000000000008888888088888888888888088888880c00000000c0c0c000880880000000000
+0777770a00000000000000000000000000000000000000000000000000000000880000808800008008000088080000880c0c0000ccccccc08888e88000000000
+0778880a0000000000000000000000000000000000000000000000000000000080888808808888088088880880888808008000000cacac0088888e8000000000
+0777870a00000000000000000000000000000000000000000000000000000000088000880880008888000880880008800c0600000ceaec008888888000000000
+7777777a000000000000000000000000000000000000000000000000000000008808882b880888bb2b8880882b888088000060000c6e6c000888880000000000
+7777770000000000000000000000000000000000000000000000000000000000808b2b22808b2bbbb2b2b8082bb2b808000006000c666c000088800000000000
+077777000000000000000000000000000000000000000000000000000000000008bbb2bb08b2b22bb2bbbb80bbbb2b800000006000ccc0000008000000000000
+07000700000000000000000000000000000000000000000000000000000000008bb2b2bb82bbbbb2bb222b282bb22bb800000000000000000000000000000000
+d0d0d0d00880880880880880d0d0d0d02b2b2bbb2b2bbb2b00000000000000000000000000000000000000000000000050000000060606000550550070000000
+00000000088088088088088000000000b2bb2bb2b2bb2bb200000000000000000000000000000000000000000000000005050000666666605555655077000000
+d0d0d008088088088088088080d0d0d0bbbbb2bbbbb2bbbb00000000000000000000000000000000000000000000000000500000067676005555565077700000
+00000088088088088088088088000000b2b2bbbbb2bbb2bb0000000000000000000000000000000000000000000000000506000006d7d6005555555077000000
+d0d0088008808808808808800880d0d02bbbb2b2bb2b22b200000000000000000000000000000000000000000000000000006000065d56000555550070000000
+00008808088088088088088080880000b2b2bbbbb2b2bbbb00000000000000000000000000000000000000000000000000000600065556000055500000000000
+d00880880880880880880880880880d02bb2bb2bbb2bbb2b00000000000000000000000000000000000000000000000000000060006660000005000000000000
+008808800880880880880880088088002bb2b2b22bb2b2b200000000000000000000000000000000000000000000000000000000000000000000000000000000
 __label__
 00000000000000000000000000000000000000000000000000000000000000777000000000000000000000000000000000000000000000000000000000000000
 00000000000000000000000000000000000000000000000000000000000007777700000000000000000000000000000000000000000000000000000000000000
@@ -2154,17 +2181,17 @@ __label__
 
 __gff__
 0000050000030303000003030700020200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003030000000000030300000000050000858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585850000
-0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003030000000000000000000000050500000000000000000000000000000003030303000000000000000003030000030303000000000000000000000000000303030000000000000000000000000003030301
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003030303000000000000000003030000000303000000000000000000000000000303030000050500030300000000000003030301
 __map__
-3f3f3f3f3f3f3fb0b13f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02020202020202023f3f3f02023f3f023f020202020202020202020202020202020202020202020202020202020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb0b13f3f013f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02020202020202023f3f3f02023f3f023f020202020202020202020202020202020202020202020202020202020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 8081823f3f3f868788898a8b8c3f8e8f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f0202020202020202020202020202020202020202020202020202020202020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-909192939495969798999a9b9c9d9e9f3f3f3f3f3f3f505151523f3f3f3f3f3f023f3f3f3f3f3f3f3f3f3f3f3f3f3f020202020202020202020202020202020202003f02020202020202020202020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+909192939495969701999a9b9c9d9e9f3f3f3f3f3f3f505151523f3f3f3f3f3f023f3f3f3f3f3f3f3f3f3f3f3f3f3f020202020202020202020202020202020202003f02020202020202020202020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 a0a1a23f3f3fa6a7a8a9aa8c8c3f3f3f3f3f3f3f3f3f600e03623f3f3f3f3f3f023f3f505151515151515151515152020202020202020202020202020202020202000002020202020202020202020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3fb6b7b8b93f8c3f3f3f3f3f3f3f3f50516442436351523f3f3f3f3f3f3f604d4d4d4d08094d4d4d4d620202020202020202020202020202020202020000003f3f3f3f3f3f3f3f3f020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60030301cc0303623f3f3f3f023f3f604d4d4dbae8eabd4d4d4d620202020202020202020202020202020202020202023f3f3f3f3f3f3f3f3f3f0202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60010101010101623f3f3f3f023f3f604d4d4dbbaeafbc4d4d4d62020202020202020202020202020202020202020202505151515151515152020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60490a01010b4b623f3f3f3f023f3f604d4d4dbbafaebc4d4d4d620202020202020202020202020202020202020202026003030303030303623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60010101010101623f3f3f3f3f3f3f604d4d4dbbaeafbc4d4d4d620202020202020202020202020202020202020202026049edcdce01ee4b623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60030301cc0303623f3f3f3f023f3f604d4d4df0e8eaf34d4d4d620202020202020202020202020202020202020202023f3f3f3f3f3f3f3f3f3f0202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60010101010101623f3f3f3f023f3f604d4d4df1f4f5f24d4d4d62020202020202020202020202020202020202020202505151515151515152020202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60490a01010b4b623f3f3f3f023f3f604d4d4df1f5f4f24d4d4d620202020202020202020202020202020202020202026003030303030303623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60010101010101623f3f3f3f3f3f3f604d4d4df1f4f5f24d4d4d620202020202020202020202020202020202020202026049edcdce01ee4b623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60070101010107623f3f3f3f3f3f3f744901010101010101014b74020202020202020202020202020202020202020202600101ddde010101623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f60070701010707623f3f3f3f3f3f3f744901010101010101014b7402020202020202020202020202020202020202023f604901010101014b623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 3f3f3f3f3f3f3fb2b33f3f3f3f3f3f3f3f3f3f3f70715401015371723f3f3f3f3f3f3f744901010101010101010f74020202020202020202020202020202020202023f0060010101ec010101623f3f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
