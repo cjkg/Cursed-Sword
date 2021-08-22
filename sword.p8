@@ -29,7 +29,7 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 function _init()
 	cartdata(cursed_sword)
-	ver="v0.2"
+	ver="v1.0"
 
 	debug={}
 	
